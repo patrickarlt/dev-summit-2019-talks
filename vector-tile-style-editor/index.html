@@ -37,65 +37,171 @@
 				</section>
 				<section data-markdown data-background="../template/img/bg-2.png">
 					<textarea data-template>
-						## Headline Here 2
+						## Vector Tile Refresher
 
-						* Bullet [points here](http://hakim.se).
+						* Highly compressed vector geographic data
+						* Styled on the client
+						* Ideal for rendering larger numbers of features
+						* Styling is not baked into tiles
 					</textarea>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-3.png">
 					<textarea data-template>
-						## Headline Here 3
+						## Styling Spec
 
-						* Bullet [points here](http://hakim.se).
+						* Styling follows the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
+						* Styles are divided into layers
+						* Each layer references a "source layer" (such as roads) and an optional filter (highways) as well as a styling data
+						* Supported layers types, background, fill, symbol, line
+						* Layer type doesn't have to match the geometry (Verify this)
+						* Can be written by hand but is extremely difficult
 					</textarea>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-4.png">
 					<textarea data-template>
-						## Headline Here 4
+						## Vector Tile Style Editor
 
-						* Bullet [points here](http://hakim.se).
+						A visual editor for styling vector tile data sets with specific tools for editing Esri and OSM basemaps.
 					</textarea>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-5.png">
 					<textarea data-template>
-						## Headline Here 5
+						## Showcase
 
-						* Bullet [points here](http://hakim.se).
+						Show some demo basemap from the showcase (ask Wes, Andrew, Jessica, Marilyn (PDX))
 					</textarea>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-6.png">
 					<textarea data-template>
-						## Headline Here 6
+						## Editor Overview
 
-						* Bullet [points here](http://hakim.se).
+						* Open a basemap
+						* Tools:
+						   * Quick Editor
+							 * Layer Editor
+							 * Color Editor
+							 * Sprite Editor
+
+						[Demo](https://developers.arcgis.com/vector-tile-style-editor)
+
+						NOTE: Demo = open a basemap, click through the tools, show minimaps, toggle hillshade, click the map, save the basemap
 					</textarea>
 				</section>
 
 
 				<section data-markdown data-background="../template/img/bg-7.png">
 					<textarea data-template>
-						## Headline Here 7
+						## Quick Editor
 
-						* Bullet [points here](http://hakim.se).
+						* Fast, general styling for Esri and OSM basemaps
+						* Define basic colors, appearances and options
+						* Internal styling rules define the appearance of each layer
 					</textarea>
+
+					[Demo](https://developers.arcgis.com/vector-tile-style-editor)
+
+					NOTE: Demo = start from previous demo, select a decent color set, show random, show color pallette tools, show label tools, show sprite recoloring, font replace, label size, road size
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-8.png">
 					<textarea data-template>
-						## Section Header
+						## Inside Quick Editor
+
+						* Internal styling rules, take the 6 colors and modify then into additional colors, for example land will be darkened and desaturated for parking lots.
+						* Layers like building shadows and road casings are darkened for contrast
+						* Label text and halos are lightened/darked to achive a specifc contrast ratio (WCAG AA/AAA)
+						* Sprites are tinted with the colors
+						* Quick editor was designed to make editing the larger number of layers in OSM and Esri basemaps easier
 					</textarea>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-9.png">
 					<textarea data-template>
-						## Headline Here 9
+						## Group Editor
 
-						* Bullet [points here](http://hakim.se).
+						* Like quick editor but for a spefic category of layers
+						* Applies the same rules as quick editor
+						* Great for editing specific categories like Roads > Major and Roads > Minor
+						* Group editor was designed to make editing the larger number of layers in OSM and Esri basemaps easier
 					</textarea>
+
+					NOTE: Demo = start from previous demo, zoom to palm springs, style at least 1 road group, golf courses (show search), edit color and label size, replace font
+				</section>
+
+				<section data-markdown data-background="../template/img/bg-9.png">
+					<textarea data-template>
+						## Layer Editor
+
+						* Edit any propery of individual layer
+						* The most verbose and detailed level of editing
+					</textarea>
+
+					NOTE: Demo = focus on golf courses use zoom range tools, edit single vs stops for text size, opacity, color
+				</section>
+
+				<section data-markdown data-background="../template/img/bg-9.png">
+					<textarea data-template>
+						## Sprite Editor
+
+						* Allows editing icons and pattern
+					</textarea>
+
+					NOTE: Demo = add a new sprite for gold courses, switch back to layer editor and use it, return to sprite editor, tint a highway sheild.
+				</section>
+
+				<section data-markdown data-background="../template/img/bg-9.png">
+					<textarea data-template>
+						## Color Editor
+
+						* replace a color with any other colors
+						* useful for auditing a map to identify colors that dont fit in the style
+					</textarea>
+
+					NOTE: Demo = add a new sprite for gold courses, switch back to layer editor and use it, return to sprite editor, tint a highway sheild.
+				</section>
+
+				<section data-markdown data-background="../template/img/bg-9.png">
+					<textarea data-template>
+						## Lets make a style
+					</textarea>
+
+					NOTE: Demo = Start making a style start to finish, take audiance suggestions
+				</section>
+
+				<section data-markdown data-background="../template/img/bg-9.png">
+					<textarea data-template>
+						## Roadmap
+					</textarea>
+
+					NOTE: Fill in week before dev summit,
+				</section>
+
+
+				<section data-markdown data-background="../template/img/bg-9.png">
+					<textarea data-template>
+						## Questions
+
+						* When will add support for custom fonts?
+						* When will this be avaialbe in ArcGIS Online/Enteprise?
+						* Can I style my own basemaps with this?
+						* When will this leave beta?
+					</textarea>
+
+					NOTE: Fill in week before dev summit
+				</section>
+
+				<section data-markdown data-background="../template/img/bg-9.png">
+					<textarea data-template>
+						## Give us your feedback
+
+						* geonet link
+					</textarea>
+
+					NOTE: Fill in week before dev summit
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-final.jpg">
