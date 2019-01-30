@@ -34,9 +34,11 @@
 				<section data-background="../template/img/bg-1.png" data-background-size="cover" style="padding-left: 80px;">
 					<h1 style="text-align: left; font-size: 80px;">Custom Basemaps with Vector Tile Style Editor</h1>
 					<p style="text-align: left; font-size: 30px; text-transform: uppercase;">Patrick Arlt and Allison Davis</p>
+					<p style="text-align: left; font-size: 30px; text-transform: uppercase;"><a href="http://bit.ly/2CSLnYX">http://bit.ly/2CSLnYX</a></p>
 				</section>
 				<section data-markdown data-background="../template/img/bg-2.png">
 					<textarea data-template>
+						<!-- Allison -->
 						## Vector Tile Refresher
 
 						* Highly compressed vector geographic data
@@ -48,6 +50,7 @@
 
 				<section data-markdown data-background="../template/img/bg-3.png">
 					<textarea data-template>
+					<!-- Allison -->
 						## Styling Spec
 
 						* Styling follows the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
@@ -61,6 +64,7 @@
 
 				<section data-markdown data-background="../template/img/bg-4.png">
 					<textarea data-template>
+						<!-- Allison -->
 						## Vector Tile Style Editor
 
 						A visual editor for styling vector tile data sets with specific tools for editing Esri and OSM basemaps.
@@ -69,32 +73,32 @@
 
 				<section data-markdown data-background="../template/img/bg-5.png">
 					<textarea data-template>
+						<!-- Pat -->
 						## Showcase
 
-						Show some demo basemap from the showcase (ask Wes, Andrew, Jessica, Marilyn (PDX))
+						<img src="vse-1920x1080.png" alt="" style="width: 50%;">
+
+						[Showcase App](https://esripdx.maps.arcgis.com/apps/Cascade/index.html?appid=9a79059a75e249039d24740758e4624b)
 					</textarea>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-6.png">
 					<textarea data-template>
+						<!-- Pat -->
 						## Editor Overview
 
-						* Open a basemap
-						* Tools:
-						   * Quick Editor
-							 * Layer Editor
-							 * Color Editor
-							 * Sprite Editor
+						[Lets get started](https://developers.arcgis.com/vector-tile-style-editor)
 
-						[Demo](https://developers.arcgis.com/vector-tile-style-editor)
-
-						NOTE: Demo = open a basemap, click through the tools, show minimaps, toggle hillshade, click the map, save the basemap
+						<aside>
+							open a basemap, click through the tools, show minimaps, toggle hillshade, click the map, save the basemap
+						</aside>
 					</textarea>
 				</section>
 
 
 				<section data-markdown data-background="../template/img/bg-7.png">
 					<textarea data-template>
+						<!-- Pat -->
 						## Quick Editor
 
 						* Fast, general styling for Esri and OSM basemaps
@@ -104,23 +108,29 @@
 
 					[Demo](https://developers.arcgis.com/vector-tile-style-editor)
 
-					NOTE: Demo = start from previous demo, select a decent color set, show random, show color pallette tools, show label tools, show sprite recoloring, font replace, label size, road size
+					<aside>
+						start from previous demo, select a decent color set, show random, show color pallette tools, show label tools, show sprite recoloring, font replace, label size, road size
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-8.png">
 					<textarea data-template>
+						<!-- Pat -->
 						## Inside Quick Editor
 
-						* Internal styling rules, take the 6 colors and modify then into additional colors, for example land will be darkened and desaturated for parking lots.
-						* Layers like building shadows and road casings are darkened for contrast
-						* Label text and halos are lightened/darked to achive a specifc contrast ratio (WCAG AA/AAA)
-						* Sprites are tinted with the colors
-						* Quick editor was designed to make editing the larger number of layers in OSM and Esri basemaps easier
+						1. Choose 6 colors
+						2. Apply quick editor rules using the 6 colors
+						3. Label color are adjusted to meet contrast requirements
+						4. Shadows and roads casing are adjusted to contrast each other
+						5. Icons are patterns are tinted to match colors
+
+						Road and text sizes are incresed or decresed by a percentage of the current size.
 					</textarea>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-9.png">
 					<textarea data-template>
+						<!-- Allison -->
 						## Group Editor
 
 						* Like quick editor but for a spefic category of layers
@@ -129,60 +139,78 @@
 						* Group editor was designed to make editing the larger number of layers in OSM and Esri basemaps easier
 					</textarea>
 
-					NOTE: Demo = start from previous demo, zoom to palm springs, style at least 1 road group, golf courses (show search), edit color and label size, replace font
+					<aside>
+						Start from previous demo, zoom to palm springs, style at least 1 road group, golf courses (show search), edit color and label size, replace font
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-9.png">
 					<textarea data-template>
+						<!-- Allison -->
 						## Layer Editor
 
 						* Edit any propery of individual layer
 						* The most verbose and detailed level of editing
 					</textarea>
 
-					NOTE: Demo = focus on golf courses use zoom range tools, edit single vs stops for text size, opacity, color
+					<aside>
+						focus on golf courses use zoom range tools, edit single vs stops for text size, opacity, color
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-9.png">
 					<textarea data-template>
+						<!-- Allison -->
 						## Sprite Editor
 
 						* Allows editing icons and pattern
 					</textarea>
 
-					NOTE: Demo = add a new sprite for gold courses, switch back to layer editor and use it, return to sprite editor, tint a highway sheild.
+					<aside>
+						add a new sprite for gold courses, switch back to layer editor and use it, return to sprite editor, tint a highway sheild.
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-9.png">
 					<textarea data-template>
+						<!-- Allison -->
 						## Color Editor
 
 						* replace a color with any other colors
 						* useful for auditing a map to identify colors that dont fit in the style
 					</textarea>
 
-					NOTE: Demo = add a new sprite for gold courses, switch back to layer editor and use it, return to sprite editor, tint a highway sheild.
+					<aside>
+						add a new sprite for gold courses, switch back to layer editor and use it, return to sprite editor, tint a highway sheild.
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-9.png">
 					<textarea data-template>
-						## Lets make a style
+						<!-- Pat -->
+						## [Lets make a style](https://developers.arcgis.com/vector-tile-style-editor)
 					</textarea>
 
-					NOTE: Demo = Start making a style start to finish, take audiance suggestions
+					<aside>
+						Start making a style start to finish, take audiance suggestions
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-9.png">
 					<textarea data-template>
+						<!-- Allison -->
 						## Roadmap
 					</textarea>
 
-					NOTE: Fill in week before dev summit,
+					<aside>
+						Fill in week before dev summit
+					</aside>
 				</section>
 
 
 				<section data-markdown data-background="../template/img/bg-9.png">
 					<textarea data-template>
+						<!-- Allison -->
 						## Questions
 
 						* When will add support for custom fonts?
@@ -191,24 +219,30 @@
 						* When will this leave beta?
 					</textarea>
 
-					NOTE: Fill in week before dev summit
+					<aside>
+						Fill in week before dev summit
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-9.png">
 					<textarea data-template>
+						<!-- Allison -->
 						## Give us your feedback
 
 						* geonet link
 					</textarea>
 
-					NOTE: Fill in week before dev summit
+					<aside>
+						Fill in week before dev summit
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/bg-final.jpg">
 					<textarea data-template>
+						<!-- Both -->
 						<img src="img/esri-science-logo-white.png" style="margin: 0; background: none; border: 0px; box-shadow: none;" />
 
-						* Slides at http://bit.ly/2lZU2lI
+						* Slides at http://bit.ly/2CSLnYX
 						* Esri Events App > Dev Summit > Talk Name
 					</textarea>
 				</section>
