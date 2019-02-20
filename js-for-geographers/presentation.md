@@ -48,14 +48,13 @@ opinions - GIS folks definitely know about those
 
 -->
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-1.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-1.png" -->
 
 <!--div style="margin: auto; padding-top: 50px; padding-bottom: 50px; width: 80%; background: rgba(30,30,30,0.9)"/-->
 
 <h1 style="text-align: left; font-size: 80px;"><b>JavaScript</b> <i>for Geographers</i></h1>
-    <p style="text-align: left; font-size: 1.5em;"><a href="https://github.com/jgravois">@jgravois</a></p>
-    <p style="text-align: left; font-size: 1.5em;"><a href="https://github.com/patrickarlt">@patrickarlt</a></p>
-    <p style="text-align: left; font-size: 1.5em;">slides: <a href="http://bit.ly/2oSM11A">http://bit.ly/2oSM11A</a>
+    <p style="text-align: left; font-size: 1.5em;">Patrick Arlt &amp; Allison Davis</p>
+    <p style="text-align: left; font-size: 1.5em;">Slides: <a href="http://bit.ly/2T4zaKJ">http://bit.ly/2T4zaKJ</a>
 
 <aside class="notes">
 
@@ -65,7 +64,7 @@ these are my notes!
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## Agenda
 
@@ -76,13 +75,13 @@ these are my notes!
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## JS can be overwhelming, but you're more equipped than you think!
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-6.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## declaring [variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
 
@@ -100,7 +99,7 @@ const notGonnaChange;
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-7.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## defining values
 
@@ -119,7 +118,7 @@ value type is **not** explicitly declared
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-7.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [arithmetic](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators) operators
 
@@ -135,7 +134,7 @@ value type is **not** explicitly declared
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-6.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [arithmetic](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators) operators
 
@@ -157,7 +156,7 @@ y-- // 2
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) - operators
 
@@ -176,7 +175,7 @@ y-- // 2
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-3.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [logical](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) operators
 ```js
@@ -198,7 +197,7 @@ true || somethingFalsy
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 ```js
@@ -216,7 +215,7 @@ dogs.length // 3
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
@@ -234,7 +233,7 @@ dogYears(3);
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-6.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## anonymous functions
 ```js
@@ -248,7 +247,7 @@ function () {
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-6.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [arrow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) functions
 ```js
@@ -269,7 +268,7 @@ age => age*2;
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-7.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 
@@ -290,7 +289,7 @@ let dog = {
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-6.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 
@@ -312,7 +311,7 @@ spot.age = 21;
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-3.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## objects - methods
 
@@ -326,7 +325,7 @@ var ptBuff = geometryEngine.buffer(point, 1000, "feet");
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) loops
 
@@ -348,7 +347,7 @@ for (var i = 0; i < 6; i++) {
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-3.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## looping through an array
 
@@ -369,7 +368,7 @@ for (var i = 0; i < dogs.length; i++) {
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## JavaScript is _Asynchronous_
 
@@ -380,19 +379,19 @@ for (var i = 0; i < dogs.length; i++) {
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## JavaScript Event Loop
 
 1. Executes one function at a time
-2. <span style="white-space: nowrap;">Run the entire function</spann>
+2. <span style="white-space: nowrap;">Run the entire function</span>
 3. Start the next function
 
 [Demo](http://jsbin.com/bezusuk/edit?js,console)
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-6.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## Callbacks
 
@@ -414,7 +413,7 @@ Callback are functions that are called when things happen.
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-7.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## Promises
 
@@ -443,7 +442,7 @@ Promises represent a future value that will be "resolved".
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## Function Scope
 
@@ -461,7 +460,7 @@ When functions are called they remember the variables around them, this is refer
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## What is `this`?
 
@@ -479,7 +478,7 @@ person.fullName() // > Casey Jones
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-3.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## What is `this`?
 
@@ -489,7 +488,7 @@ The value of `this` depends on how the function was called.
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## lets set up a JS development environment
 
@@ -501,7 +500,7 @@ The value of `this` depends on how the function was called.
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-7.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## debugging
 
@@ -512,7 +511,7 @@ Get familiar with your dev tools!
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-6.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## the DOM
 
@@ -527,7 +526,7 @@ Get familiar with your dev tools!
 
 
 
-<!-- .slide: data-background="../../../template/img/ds2018/2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## sharing JavaScript - modules
 
@@ -535,7 +534,7 @@ As applications grow it is helpful to divide code into different files to organi
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## ES2015 Modules
 
@@ -547,7 +546,7 @@ This is the future as you learn JavaScript you will encounter this more often.
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## AMD Modules (JS API)
 
@@ -564,7 +563,7 @@ require([
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-3.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## lets put all this to use!
 
@@ -577,7 +576,7 @@ require([
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## The JavaScript Language</small>
 
@@ -589,7 +588,7 @@ Updates every year (ES2015, ES2016, ES2017).
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-7.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## the JavaScript ecosystem
 
@@ -600,7 +599,7 @@ Updates every year (ES2015, ES2016, ES2017).
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## the JavaScript ecosystem
 
@@ -610,7 +609,7 @@ You don't know what you don't know.
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## JavaScript Fatigue
 
@@ -622,7 +621,7 @@ You don't know what you don't know.
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## Fight JavaScript Fatigue
 
@@ -632,7 +631,7 @@ You don't know what you don't know.
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## learn more!
 
@@ -648,27 +647,12 @@ You don't know what you don't know.
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-esri.png" -->
 
-please, _please_, **please** fill out a session survey
+<br><br><br><br><br><br>
 
-1. Download the Esri Events App
-2. Select Dev Summit
-3. Search for "JavaScript for Geographers"
-4. Leave feedback!
+Slides at http://bit.ly/2T4zaKJ
 
 ---
 
-<!-- .slide: data-background="../../../template/img/ds2018/bg-6.png" -->
-
-idea, question, issue, or success story?
-
-[@geogangster](https://twitter.com/geogangster) / [@patrickarlt](https://twitter.com/patrickarlt)
-
-Slides: [`http://bit.ly/2oSM11A`](http://bit.ly/2oSM11A)
-
----
-
-<!-- .slide: data-background="../../../template/img/ds2018/bg-final.jpg" -->
-
-<img class='transparent' src="../../../template/img//esri-science-logo-white.png">
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-rating.png" -->

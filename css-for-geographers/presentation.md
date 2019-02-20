@@ -1,4 +1,4 @@
-<!-- .slide: data-background="../template/img/bg-1.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-1.png" -->
 
 <h1 style="text-align: left; font-size: 80px;">CSS for Geographers</h1>
 <p style="text-align: left; font-size: 30px;">Patrick Arlt | <a href="https://twitter.com/patrickarlt">@patrickarlt</a></p>
@@ -6,13 +6,13 @@
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-6.png" -->
 
 ## This talk is all fundamentals.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-6.png" -->
 
 ## First Some Notes
 
@@ -22,7 +22,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-6.png" -->
 
 ## CSS is Hard
 
@@ -32,7 +32,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-5.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-6.png" -->
 
 ## Lets do stuff with CSS!
 
@@ -43,13 +43,13 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-4.png" -->
 
 ## Basics
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Where does CSS go?
 
@@ -62,7 +62,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### What does CSS look like?
 
@@ -74,7 +74,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Selector
 
@@ -86,7 +86,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Declaration
 
@@ -98,7 +98,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Property
 
@@ -110,7 +110,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Value
 
@@ -122,7 +122,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Property
 
@@ -134,7 +134,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Value
 
@@ -146,7 +146,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Property
 
@@ -158,7 +158,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Value
 
@@ -170,7 +170,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### A CSS Rule
 
@@ -182,7 +182,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ## How does CSS work?
 
@@ -190,7 +190,7 @@ Designed to help you keep learning beyond this talk.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### _Cascading_ Style Sheets
 
@@ -198,7 +198,7 @@ Styles from different sources _cascade_ and coalesce into the final styles for t
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### A Typical Cascade
 
@@ -211,7 +211,7 @@ Styles from different sources _cascade_ and coalesce into the final styles for t
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### CSS Specificity
 
@@ -224,7 +224,7 @@ When properties collide specificity determines which property wins.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### Selector Specificity
 
@@ -236,13 +236,13 @@ When properties collide specificity determines which property wins.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 In a specificity tie the last loaded rule wins.
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-2.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 ### In Practice
 
@@ -252,7 +252,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-6.png" -->
 
 ## Lets Build an App!
 
@@ -260,7 +260,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/revage/edit">Block</a> vs <a href="http://jsbin.com/josuba/edit">Inline</a></h2>
 
@@ -273,7 +273,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/ficatu/edit">Units</h2>
 
@@ -285,7 +285,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/sawoho/3/edit">Floats</a></h2>
 
@@ -297,13 +297,13 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/nisuzu/13/edit?html,output">Problems with Floats</a></h2>
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/rowoca/8/edit?html,output">Clearing Floats</a></h2>
 
@@ -313,7 +313,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/sihovo/10/edit?html,output">Clearfix</a></h2>
 
@@ -323,7 +323,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/yufimes/edit?html,output">The Box Model</a></h2>
 
@@ -335,7 +335,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/nodufe/9/edit?html,output">Box Sizing</a></h2>
 
@@ -348,7 +348,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/livofev/8/edit?html,output">Flexbox</a></h2>
 
@@ -363,7 +363,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/joziniv/edit?html,output">CSS Grid</a></h2>
 
@@ -377,7 +377,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/pitemo/4/edit">Margin, Padding and Borders</a></h2>
 
@@ -389,7 +389,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/gibuhe/edit?html,output">Media Queries and Responsive Design</a></h2>
 
@@ -402,7 +402,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/babiwa/4/edit?html,output">Positioning</a></h2>
 
@@ -413,7 +413,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/gerexud/3/edit">Typography (Choosing Fonts)</a></h2>
 
@@ -426,7 +426,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/dugapa/7/edit">Typography (Sizing Type)</a></h2>
 
@@ -437,7 +437,7 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2><a href="http://jsbin.com/jafeza/6/edit?html,output">Adding Color</a></h2>
 
@@ -451,13 +451,13 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-4.png" -->
 
 <h2><a href="http://jsbin.com/gixaro/13/edit?html,output">Adding JavaScript</a></h2>
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2>Browser Compatibility</h2>
 
@@ -468,16 +468,15 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2>More Browser Compatibility</h2>
 
 <p>Remember Microsoft only supports IE 11 officially now. All other versions are not supported and might have security bugs.</p>
-<p>Scary!</p>
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-6.png" -->
 
 ## Best Practices
 
@@ -487,12 +486,12 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-final.jpg" -->
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-esri.png" -->
 
-<img src="../template/img/esri-science-logo-white.png" style="margin: 0; background: none; border: 0px; box-shadow: none;" />
+<br><br><br><br><br><br>
 
-* Slides at http://bit.ly/2CF5kQw
-* Leave a Review:
-  * Esri Events App
-  * Dev Summit
-  * CSS for Geographers
+Slides at http://bit.ly/2T4zaKJ
+
+---
+
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-rating.png" -->

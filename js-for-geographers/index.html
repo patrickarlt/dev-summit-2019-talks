@@ -5,18 +5,18 @@
 
         <title>JavaScript for geographers</title>
 
-        <link rel="stylesheet" href="../../../template/css/reveal.css">
-        <link rel="stylesheet" href="../../../template/css/theme/esri-dev-summit-2018.css" id="theme">
+        <link rel="stylesheet" href="../template/css/reveal.css">
+        <link rel="stylesheet" href="../template/css/theme/dev-summit-2019.css" id="theme">
 
         <!-- Code syntax highlighting -->
-        <link rel="stylesheet" href="../../../template/lib/css/zenburn.css">
+        <link rel="stylesheet" href="../template/lib/css/zenburn.css">
 
         <!-- Printing and PDF exports -->
         <script>
           var link = document.createElement( 'link' );
           link.rel = 'stylesheet';
           link.type = 'text/css';
-          link.href = window.location.search.match(/print-pdf/gi ) ? '../../../template/css/print/pdf.css' : '../../../template/css/print/paper.css';
+          link.href = window.location.search.match(/print-pdf/gi ) ? '../template/css/print/pdf.css' : '../template/css/print/paper.css';
           document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
 
@@ -30,8 +30,8 @@
                 <section data-markdown="presentation.md"></section>
             </div>
         </div>
-        <script src="../../../template/lib/js/head.min.js"></script>
-        <script src="../../../template/js/reveal.js"></script>
+        <script src="../template/lib/js/head.min.js"></script>
+        <script src="../template/js/reveal.js"></script>
         <script>
           // Full list of configuration options available at:
           // https://github.com/hakimel/reveal.js#configuration
@@ -44,14 +44,15 @@
             width: 1366,
             height: 768,
             transition: 'fade', // none/fade/slide/convex/concave/zoom
+            margin: 0.25,
             // Optional reveal.js plugins
             dependencies: [
-              { src: '../../../template/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-              { src: '../../../template/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              { src: '../../../template/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              { src: '../../../template/plugin/highlight/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
-              { src: '../../../template/plugin/zoom-js/zoom.js', async: true },
-              { src: '../../../template/plugin/notes/notes.js', async: true }
+              { src: '../template/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: '../template/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: '../template/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: '../template/plugin/highlight/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+              { src: '../template/plugin/zoom-js/zoom.js', async: true },
+              { src: '../template/plugin/notes/notes.js', async: true }
             ]
           });
           window.Reveal.addEventListener('ready', function(event) {

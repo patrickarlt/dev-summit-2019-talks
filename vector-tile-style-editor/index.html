@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="../template/css/reveal.css">
-		<link rel="stylesheet" href="../template/css/theme/esri-dev-summit-2018.css">
+		<link rel="stylesheet" href="../template/css/theme/dev-summit-2019.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../template/lib/css/zenburn.css">
@@ -31,12 +31,12 @@
 			-->
 
 			<div class="slides">
-				<section data-background="../template/img/bg-1.png" data-background-size="cover" style="padding-left: 80px;">
-					<h1 style="text-align: left; font-size: 80px;">Custom Basemaps with Vector Tile Style Editor</h1>
-					<p style="text-align: left; font-size: 30px; text-transform: uppercase;">Patrick Arlt and Allison Davis</p>
+				<section data-background="../template/img/2019/devsummit/bg-1.png" data-background-size="cover" style="padding-left: 80px;">
+					<h1 style="text-align: left; font-size: 80px;">Custom Basemaps with <br>Vector Tile Style Editor</h1>
+					<p style="text-align: left; font-size: 30px;">Patrick Arlt and Allison Davis</p>
 					<p style="text-align: left; font-size: 30px;"><a href="http://bit.ly/2CSLnYX">http://bit.ly/2CSLnYX</a></p>
 				</section>
-				<section data-markdown data-background="../template/img/bg-2.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Allison -->
 						## Vector Tile Refresher
@@ -48,21 +48,21 @@
 					</textarea>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 					<!-- Allison -->
-						## Styling Spec
+					## Styling Spec
 
-						* Styling follows the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
-						* Styles are divided into layers
-						* Each layer references a "source layer" (such as roads) and an optional filter (highways) as well as a styling data
-						* Supported layers types: background, fill, symbol, line
-						* Layer type doesn't have to match the geometry (Verify this)
-						* Can be written by hand but is extremely difficult
+					* Styling follows the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
+					* Styles are divided into layers
+					* Each layer references a "source layer" (such as roads) and an optional filter (highways) as well as a styling data
+					* Supported layers types: background, fill, symbol, line
+					* Layer type doesn't have to match the geometry (Verify this)
+					* Can be written by hand but is extremely difficult
 					</textarea>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-6.png">
 					<textarea data-template>
 						<!-- Allison -->
 						## Vector Tile Style Editor
@@ -71,7 +71,7 @@
 					</textarea>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-4.png">
 					<textarea data-template>
 						<!-- Pat -->
 						## Showcase
@@ -82,7 +82,7 @@
 					</textarea>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-5.png">
 					<textarea data-template>
 						<!-- Pat -->
 						## Editor Overview
@@ -96,7 +96,7 @@
 				</section>
 
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Pat -->
 						## Quick Editor
@@ -113,7 +113,7 @@
 					</aside>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Pat -->
 						## Inside Quick Editor
@@ -128,7 +128,7 @@
 					</textarea>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Allison -->
 						## Group Editor
@@ -144,7 +144,7 @@
 					</aside>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Allison -->
 						## Layer Editor
@@ -158,7 +158,7 @@
 					</aside>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Allison -->
 						## Sprite Editor
@@ -171,7 +171,7 @@
 					</aside>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Allison -->
 						## Color Editor
@@ -181,11 +181,11 @@
 					</textarea>
 
 					<aside class="notes`">
-						Demonstrate audit - go to layer editor, select a single layer, make it a really strange color, go back to color editor to find and fix. 
+						Demonstrate audit - go to layer editor, select a single layer, make it a really strange color, go back to color editor to find and fix.
 					</aside>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-5.png">
 					<textarea data-template>
 						<!-- Pat -->
 						## [Let's make a style](https://developers.arcgis.com/vector-tile-style-editor)
@@ -196,7 +196,7 @@
 					</aside>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Allison -->
 						## Roadmap
@@ -208,7 +208,7 @@
 				</section>
 
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Allison -->
 						## Questions
@@ -224,7 +224,7 @@
 					</aside>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-5.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-4.png">
 					<textarea data-template>
 						<!-- Allison -->
 						## Give us your feedback
@@ -237,15 +237,15 @@
 					</aside>
 				</section>
 
-				<section data-markdown data-background="../template/img/bg-final.png">
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-esri.png">
 					<textarea data-template>
-						<!-- Both -->
-						<img src="img/esri-science-logo-white.png" style="margin: 0; background: none; border: 0px; box-shadow: none;" />
+						<br><br><br><br><br><br>
 
-						* Slides at http://bit.ly/2CSLnYX
-						* Esri Events App > Dev Summit > Talk Name
+						Slides at http://bit.ly/2CSLnYX
 					</textarea>
 				</section>
+
+				<section data-markdown data-background="../template/img/2019/devsummit/bg-rating.png"></section>
 			</div>
 		</div>
 
@@ -257,13 +257,14 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				// This height and width are here for the left-aligned title slide.
-				// If you do not want that, you can remove these two settings and
-				// the presentation will be closer to OOTB-Reveal.js:
-				width: '100%',
-				height: '100%',
-
+				//controls: true,
+				progress: true,
 				history: true,
+				center: true,
+				controls: false,
+				width: 1366,
+				height: 768,
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
 				dependencies: [
 					{ src: '../template/plugin/markdown/marked.js' },
 					{ src: '../template/plugin/markdown/markdown.js' },
