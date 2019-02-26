@@ -301,31 +301,9 @@ Right click on something you want to change click "Inspect Element"
   <li><a href="http://learnlayout.com/float.html">Learn CSS Layout: float</a></li>
 </ul>
 
----
+<p>Bonus Demo: <a href="http://jsbin.com/nisuzu/13/edit?html,output">Problems with Floats</a></p>
 
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-<h2><a href="http://jsbin.com/nisuzu/13/edit?html,output">Problems with Floats</a></h2>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-<h2><a href="http://jsbin.com/rowoca/8/edit?html,output">Clearing Floats</a></h2>
-
-<ul>
-  <li><a href="http://learnlayout.com/clear.html">Learn CSS Layout: clear</a></li>
-</ul>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-<h2><a href="http://jsbin.com/sihovo/10/edit?html,output">Clearfix</a></h2>
-
-<ul>
-  <li><a href="http://learnlayout.com/clearfix.html">Learn CSS Layout: clearfix</a></li>
-</ul>
+<p>Bonus Demo #2: <a href="http://jsbin.com/rowoca/8/edit?html,output">Clearing Floats</a></p>
 
 ---
 
@@ -377,7 +355,10 @@ Right click on something you want to change click "Inspect Element"
   <li><a href="http://cssgridgarden.com/">Grid Garden</a></li>
   <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid</a></li>
     <li><a href="https://gridbyexample.com/">Grid by Example</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">Debugging Grid Layouts</a></li></ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">Debugging Grid Layouts</a></li>
+    <li><a href="https://labs.jensimmons.com/">Intro to CSS Grid: Jen Simmons</a></li>
+
+</ul>
 
 <p><a href="http://jsbin.com/zuwarus/edit?html,output">Bonus Demo: CSS Grid Template Areas</a></p>
 
