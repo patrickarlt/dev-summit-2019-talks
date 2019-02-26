@@ -20,6 +20,10 @@ Lots of supplemental info in these slides.
 
 Designed to help you keep learning beyond this talk.
 
+Pretty much everything is a link.
+
+Slides <a href="http://bit.ly/2CF5kQw">http://bit.ly/2CF5kQw</a></p>
+
 ---
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-6.png" -->
@@ -29,6 +33,8 @@ Designed to help you keep learning beyond this talk.
 * Closer to art then computer science
 * Lots of hard, unintuitive concepts
 * It has taken me **years** to amass this knowledge
+* Changes somewhat frequently
+* Best practices change
 
 ---
 
@@ -56,7 +62,7 @@ Designed to help you keep learning beyond this talk.
 * Inside a `<style>` tag.
 * Inside a `.css` file that is loaded with a `<link>` tag.
   ```html
-  <link href="file.css" rel="stylesheet" type="text/css">
+  <link href="my-css-file.css" rel="stylesheet" type="text/css">
   ```
 * In the `<head>` tag of your `.html` files.
 
@@ -379,7 +385,7 @@ Right click on something you want to change click "Inspect Element"
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-<h2><a href="http://jsbin.com/pitemo/4/edit">Margin, Padding and Borders</a></h2>
+<h2><a href="http://jsbin.com/pitemo/5/edit">Margin, Padding and Borders</a></h2>
 
 <ul>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">Mastering margin collapsing</a></li>
@@ -455,15 +461,15 @@ Right click on something you want to change click "Inspect Element"
 
 <h2><a href="http://jsbin.com/gixaro/13/edit?html,output">Adding JavaScript</a></h2>
 
+<p><a href="https://jsbin.com/ducimox/1/edit?html">Bonus Demo: w/ CSS Grid</a></p>
+
 ---
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
 <h2>Browser Compatibility</h2>
 
-<p>Sometime browsers will add experimental or early support for a new standard. They will often add a prefix like <code>-webkit-</code>, <code>-moz-</code> or <code>-ms-</code> to a property or value.</p>
-<p>Sites like <a href="http://caniuse.com/flexbox">Can I Use?</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">MDN</a> to check if browsers support a specific property.</p>
-<p>Tools like <a href="https://autoprefixer.github.io/">Autoprefixer</a> to add prefixes automatically.</p>
+<p>Sites like <a href="http://caniuse.com/flexbox">Can I Use?</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">MDN</a> to check if browsers support a specific property. Sometimes experimental or partially supports CSS properties will require a <code>-webkit-</code>, <code>-moz-</code> or <code>-ms-</code> prefix. Tools like <a href="https://autoprefixer.github.io/">Autoprefixer</a> to add prefixes automatically.</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports"></code>@supports</code></a> was introduced with CSS grid to check for support of new features.</p>
 
 ---
@@ -482,7 +488,10 @@ Right click on something you want to change click "Inspect Element"
 
 * Keep selectors as simple as possible
 * Don't use tools until you are familiar with the basics
+* Add tools when you feel limited or want more productivity
+* Don't worry so much about browser compatibility
 * Watch out for the size of web fonts
+* Avoid floats for layout, try using Flexbox and Grid, they are the future
 
 ---
 
