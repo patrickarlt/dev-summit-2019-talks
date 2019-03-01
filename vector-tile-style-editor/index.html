@@ -53,12 +53,11 @@
 					<!-- Allison -->
 					## Styling Spec
 
-					* Styling follows the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
+					* Follows the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
 					* Styles are divided into layers
-					* Each layer references a "source layer" (such as roads) and an optional filter (highways) as well as a styling data
+					* Each layer references a "source layer" (roads), an optional filter (highways), and a styling data
 					* Supported layers types: background, fill, symbol, line
-					* Layer type doesn't have to match the geometry (Verify this)
-					* Can be written by hand but is extremely difficult
+					* Writing by hand is extremely difficult and timeconsuming
 					</textarea>
 				</section>
 
@@ -67,7 +66,13 @@
 						<!-- Allison -->
 						## Vector Tile Style Editor
 
-						A visual editor for styling vector tile data sets with specific tools for editing Esri and OSM basemaps.
+						* A visual editor for styling vector tile data sets
+						* Specific tools for editing Esri basemaps
+						* OSM support coming soon!
+
+						<aside class="notes">
+							Web application built by the Developer Experience team in Angular. Currently available via the Developers website. Will be integrated into ArcGIS Online later this year.
+						</aside>
 					</textarea>
 				</section>
 
@@ -103,7 +108,7 @@
 
 						* Fast, general styling for Esri and OSM basemaps
 						* Define basic colors, appearances, and options
-						* Internal styling rules define the appearance of each layer
+						* Internal styling rules define each layer's appearance
 					</textarea>
 
 					[Demo](https://developers.arcgis.com/vector-tile-style-editor)
@@ -118,13 +123,13 @@
 						<!-- Pat -->
 						## Inside Quick Editor
 
-						1. Choose 6 colors
-						2. Apply quick editor rules using the 6 colors
-						3. Label color are adjusted to meet contrast requirements
+						1. Choose six colors
+						2. Add colors to quick editor categories and apply
+						3. Label colors are adjusted to meet contrast requirements
 						4. Shadows and roads casing are adjusted to contrast each other
 						5. Icons and patterns are tinted to match colors
 
-						Road and text sizes are increased or decreased by a percentage of the current size.
+						Road and text sizes are altered by a percentage of the current size.
 					</textarea>
 				</section>
 
@@ -133,7 +138,7 @@
 						<!-- Allison -->
 						## Group Editor
 
-						* Like quick editor but for a specific category of layers
+						* Gathers a specific category of layers
 						* Applies the same rules as quick editor
 						* Great for editing specific categories like Roads > Major and Roads > Minor
 						* Group editor was designed to make editing the larger number of layers in OSM and Esri basemaps easier
@@ -154,7 +159,7 @@
 					</textarea>
 
 					<aside class="notes`">
-						focus on golf courses use zoom range tools, edit single vs stops for text size, opacity, color
+						focus on golf courses. use zoom range tools, edit single vs stops for text size, opacity, color
 					</aside>
 				</section>
 
@@ -163,11 +168,13 @@
 						<!-- Allison -->
 						## Sprite Editor
 
-						* Allows editing icons and pattern
+						* Recolors icons and pattern
+						* Uploads new sprites
 					</textarea>
 
 					<aside class="notes`">
-						add a new sprite for golf courses, switch back to layer editor and use it, return to sprite editor, tint a highway shield.
+						add a new sprite for golf course pattern, switch back to layer editor and use it, return to sprite editor, tint a highway shield.
+						If time, add a symbol sprite for golf courses, add it to the golf courses label, demo offsets & anchor
 					</aside>
 				</section>
 
@@ -176,8 +183,8 @@
 						<!-- Allison -->
 						## Color Editor
 
-						* replace a color with any other colors
-						* useful for auditing a map to identify colors that don't fit in the style
+						* Replaces all instances of a color across a style
+						* Useful for auditing a map to identify colors that don't fit in the style
 					</textarea>
 
 					<aside class="notes`">
@@ -200,10 +207,13 @@
 					<textarea data-template>
 						<!-- Allison -->
 						## Roadmap
+						* OSM support - coming very soon!
+						* ArcGIS Online integration - summer 2019
+						* Custom font support - ??
 					</textarea>
 
 					<aside class="notes`">
-						Fill in week before dev summit
+						TODO font support timeline?
 					</aside>
 				</section>
 
@@ -211,29 +221,29 @@
 				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
 					<textarea data-template>
 						<!-- Allison -->
-						## Questions
-
-						* When will support for custom fonts be added?
-						* When will the VTSE be available in ArcGIS Online/Enteprise?
+						## Frequent Questions
 						* Can I style my own basemaps with the VTSE?
 						* When will this leave beta?
+
 					</textarea>
 
 					<aside class="notes`">
-						Fill in week before dev summit
+						Answers: you can, although you won't be able to use quick editor or group editor at this time
+						Integration into ArcGIS Online will mark the end of our beta release
 					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/2019/devsummit/bg-4.png">
 					<textarea data-template>
 						<!-- Allison -->
-						## Give us your feedback
-
-						* Geonet: https://bit.ly/2RzadCc
+						## How do I get started?
+						* [ArcGIS DevLabs: Style a vector basemap](https://developers.arcgis.com/labs/arcgisonline/style-a-vector-basemap/)
+						* [ArcGIS DevLabs: Display a styled basemap in your app](https://developers.arcgis.com/labs/javascript/display-a-styled-vector-basemap/)
+						* Share your feedback with us on Geonet: https://bit.ly/2RzadCc
 					</textarea>
 
 					<aside class="notes`">
-						Fill in week before dev summit
+
 					</aside>
 				</section>
 
