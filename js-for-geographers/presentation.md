@@ -5,25 +5,30 @@ Intro (5 minutes)
   * dont be overwhelmed (pat)
   * you are technically minded enough to learn this (john)
 
-JavaScript is fun (and useful!)
-Variables and Objects (5 minutes. jg)
-operators
-Arrays
-loops
-Functions (5 minutes, jg)
+Fundamentals (12 minutes)
+  JavaScript is fun (and useful!) - Pat?
+  variables, operators, arrays, functions, objects, classes (10 minutes, Allison)
 
-Closures and `this` (5 minutes, pat)
-Async (5 minutes, pat)
-Local Dev Environment, Install node, http-server, start a local server serving a basic html page (CDN) and an external script (5 minutes, jg) https://momentjs.com/docs/#/displaying/from/
-The DOM and Browser Development (5 minutes, pat)
-Debugging (5 minutes, pat)
-Modules / libraries (5 minutes, pat)
-Walk through a few JS API samples (5 minutes, jg) (with event and promise)
-The JavaScript Ecosystem (5 minutes, pat)
-A note about ES 2015 (pat)
-“Opinions” About JavaScript (5 minutes, pat)
-Resources to Keep Learning (2 minutes, jg)
+Patterns (28 minutes)
+  Async, callbacks, promises (5 minutes, Pat)
+  Closures and `this` (5 minutes, Pat)
 
+  Local Dev Environment - just a quick go over of John's gists (3 minutes, Allison)
+  The DOM and Browser Development (5 minutes, Allison)
+  Modules (5 minutes, Allison)
+  Walk through chaining promises JS API sample (5 minutes, Allison)
+
+The JavaScript Ecosystem (15 minutes)
+  Language, tools, frameworks (5 minutes, pat)
+  A note about ES 2015 (pat)
+  “Opinions” About JavaScript/JS Fatigue (5 minutes, pat)
+
+  ArcGIS cli (3 minutes, Allison)
+  Resources to Keep Learning (2 minutes, Allison)
+
+Questions/take our workshop survey
+
+****
 https://twitter.com/hoverbird/status/750826785781063680
 https://twitter.com/thomasfuchs/status/708675139253174273?lang=en
 
@@ -83,41 +88,25 @@ opinions - GIS folks definitely know about those
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## declaring [variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+## [variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
 
 ```js
 var dog;
-
-> undefined
-
-// new
 let nifty;
 const notGonnaChange;
 
 > undefined
+
+var dogName = 'spot';
+var age = 21;
+var canBark = true;
+// value type is **not** explicitly declared
+
 ```
 
 <aside class="notes">
 
-combine with next slide into single "Variables" slide
-
 </aside>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## defining values
-
-```js
-var dogName = 'spot';
-
-var age = 21;
-
-var canBark = true;
-
-```
-value type is **not** explicitly declared
 
 ---
 
@@ -133,60 +122,37 @@ value type is **not** explicitly declared
 3 - 2 // 1
 
 3 * 2 // 6
+
+12 % 5 // 2 (modulus)
+
+age++ // 22
+
+age-- // 20
+
+'high' + 'five' // 'highfive'
+
 ```
 
 <aside class="notes">
-
-combine with next slide into single "Arithmetic Operators" slide
 
 </aside>
 
 ---
 
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## [arithmetic](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators) operators
-
-```js
-12 % 5 // 2 (modulus)
-
-var x = 5;
-x++ // 6
-
-var y = 3;
-y-- // 2
-
-'foo' + 'bar' // 'foobar'
-```
-
----
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## [comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) - operators
+## [comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) & [logical](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) operators
 
 ```js
 3 === 3   // true
 3 === '3' // false
 
-'foo' != 'bar' // true
+'dog' != 'cat' // true
 
 3 > 2 // true
 3 >= 2 // true
-```
 
-<aside class="notes">
-
-combine with next slide into single "Comparison and Logical Operators" slide
-
-</aside>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## [logical](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) operators
-```js
 // logical 'and'
 true && anotherTruthy
 > true
@@ -199,15 +165,15 @@ true || somethingFalsy
 !somethingTruthy
 > false
 ```
-   <aside class="notes">
 
-   </aside>
+<aside class="notes">
+</aside>
 
 ---
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+## [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) 
 
 ```js
 function dogYears(age) {
@@ -217,34 +183,22 @@ function dogYears(age) {
 dogYears(3);
 > 21
 ```
+
+## [arrow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) functions
+```js
+age => {
+  return age*7
+}
+
+age => age*7
+// these are the same! 
+```
 <aside class="notes">
-
-combine with next slide into single "Functions" slide, address functions as values
-
+a function can be treated as a value, passed to another function as an argument, returned as a value, etc.  
 </aside>
 
 ---
 
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## [arrow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) functions
-```js
-function (age) {
-  return age*2;
-}
-// ===
-age => {
-  age*2;
-}
-// ===
-age => age*2;
-
-```
-   <aside class="notes">
-
-   </aside>
-
----
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
@@ -257,35 +211,20 @@ dogs[0] // 'Spot'
 dogs.push('Fido');
 
 dogs.length // 3
+
+dogs.forEach(dog => {
+  console.log(dog);
+}); 
+> undefined
+
+dogs.map(dog => dog.toUpperCase());
+> ['SPOT', 'LASSIE', 'FIDO']
 ```
 
 <aside class="notes">
-
-combine with next slide into single "Arrays + Array Methods" slide show `Array.forEach`, `Array.map`.
-
+* JavaScript global objects have built-in properties and methods, ie. Array.forEach, string.toUpperCase
+* map and many other array methods return a new array and do not modify the original data
 </aside>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) loops
-
-```js
-for (var i = 0; i < 6; i++) {
-   console.log(i);
-}
-
-> 0
-> 1
-> 2
-> 3
-> 4
-> 5
-```
-   <aside class="notes">
-
-   </aside>
 
 ---
 
@@ -297,38 +236,48 @@ for (var i = 0; i < 6; i++) {
 let dog = {
   age: 7,
   canBark: true,
-  _ssshhh: 'top secret'
+  _ssshhh: 'top secret',
+  ageInDogYears: function(age) {
+    return age * 7;
+  }
 }
 
-> Object {age: 7, canBark: true, _ssshhh: 'top secret' }
+> Object {age: 7, canBark: true, _ssshhh: 'top secret', ageInDogYears: ageInDogYears() }
 
+dog.ageInDogYears(age);
+> 49
 ```
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## objects - methods
-
-```
-// Buffer point by 1000 feet
-var ptBuff = geometryEngine.buffer(point, 1000, "feet");
-```
-
 <aside class="notes">
   methods == functions!
 </aside>
 
 ---
 
+
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## Classes and (maybe?) Prototypes
+## [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) 
+
+```js
+class Dog {
+  constructor(name) {
+    this.name = name;
+  }
+}
+let myDog = new Dog('Ginsburg'); // Object { name: 'Ginsburg'}
+
+class Dalmation extends Dog {
+  constructor(name) {
+    super(name); // super calls the parent class' constructor
+    this.breed = 'Dalmation';
+  }
+}
+let myOtherDog = new Dalmation('Spot'); // Object { breed: 'Dalmation', name: 'Spot'}
+```
 
 <aside class="notes">
-
-Fill out this slide (Allison)
-
+Add prototypes? If time
+Classes introduced in ES2015 as syntactical sugar over JS's existing prototype-based inheritance
 </aside>
 
 ---
@@ -493,45 +442,37 @@ The value of `this` depends on how the function was called.
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## lets set up a JS development environment
+## Let's set up a JS development environment
 
-* [do i have a web server running?](https://gist.github.com/jgravois/5e73b56fa7756fd00b89)
+* [Do I have a web server running?](https://gist.github.com/jgravois/5e73b56fa7756fd00b89)
 * [`demo.html`](https://github.com/jgravois/presentations/blob/12ad63798193bd32950809996c9825067a742aa7/devsummit/2017/js/snippets/demo.html)
 
 <aside class="notes">
-  (Allison)
+  (Allison) - this almost seems like it should get moved to resources instead - or should I actually demo setting this up locally? 
 </aside>
 
 ---
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## debugging
-
-Get familiar with your dev tools!
-
-* `console.log` - print things to the console
-* `debugger` - stops the application so you can look around
-
-<aside class="notes">
-  maybe cut this slide and talk through this in the DOM demo? Maybe add a link to a debugging article at the end (Allison)
-</aside>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## the DOM
+## the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
 * select elements
 * listen for events
 * change elements
 
-[A simple form](http://jsbin.com/qojodez/edit?html,js,output);
-[Finished example](http://jsbin.com/viconot/edit?html,js,output);
+[A simple form](https://stackblitz.com/edit/js-zh1tc1)
+
+[Finished example](https://stackblitz.com/edit/js-5dkvb8)
 
 <aside class="notes">
-  (Allison)
+  Old demo urls:
+  Start: http://jsbin.com/qojodez/edit?html,js,output
+  Finish: http://jsbin.com/viconot/edit?html,js,output
+  
+  For debugging -- intially, form is missing its id, form is also missing a few name attrs 
+  * `console.log` - print things to the console
+  * `debugger` - stops the application so you can look around
 </aside>
 
 ---
@@ -540,15 +481,18 @@ Get familiar with your dev tools!
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## sharing JavaScript - modules
+## sharing JavaScript
 
-As applications grow it is helpful to divide code into different files to organize. You can just use `<script>` tags for small apps.
+As applications grow, divide code into different files to stay organized. For small apps, you can just use `<script>` tags.
+``` html
+<!-- Add script tags at the bottom of index.html before </body>-->
+<script src="/alert.js"></script>
+<script src="/form.js"></script>
+```
 
 <aside class="notes">
-
-show example of dividing app functionality into different JS files, maybe utilities.js and app.js
-
-show each js file defining and using globals
+[Form demo - now with multiple JS files](https://glitch.com/edit/#!/all-the-scripts)
+Not sure we have time to show this demo and it's pretty self-explanatory. Stackblitz doesn't support multiple script tags and Glitch can't do import/export
 
 (Allison)
 
@@ -558,17 +502,20 @@ show each js file defining and using globals
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## JavaScript Modules
+## [JavaScript Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 
 ```
 import { something } from 'some-module';
 ```
 
-This is the future as you learn JavaScript you will encounter this more often.
+This is the future: as you learn JavaScript, you will encounter this more often.
+[Module demo](https://stackblitz.com/edit/js-7duku9)
 
 <aside class="notes">
+Basic import support is available in all browsers except IE
+Dynamic import catching up fast
 
-add links to more resources about modules, show demo in glitch https://glitch.com/edit/#!/workable-plastic?path=index.html:1:0
+TODO: add links to more resources about modules
 
 (Allison)
 
@@ -590,6 +537,7 @@ require([
 ```
 
 `require` is a fancy way of adding `<script>` tags to load code on demand.
+[View live demo](https://jsbin.com/hococib/edit?html,js,output)
 
 <aside class="notes">
   (Allison)
@@ -599,12 +547,13 @@ require([
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## lets put all this to use!
+## Putting the pieces together
 
 * [../sample-code/chaining-promises/](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=chaining-promises)
 
 <aside class="notes">
-  step through a JSAPI sample, better title for this slide (Allison)
+  Step through above JSAPI sample (Allison)
+  - point out instances of what we've covered so far
 </aside>
 
 ---
@@ -631,13 +580,13 @@ Updates every year.
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## the JavaScript ecosystem
+## Build tools, bundlers, and frameworks - oh my!
 
-* Module Formats - CommonJS, **AMD**, **JavaScript Modules**
-* Compilers - Babel, **TypeScript**
-* Bundlers - Rollup, **WebPack**, SystemJS, Parcel
-* Minifiers - UglifyJS
-* Frameworks - React, Vue, Angular, Ember
+* Module Formats - [CommonJS](http://wiki.commonjs.org/wiki/CommonJS), **[AMD](https://requirejs.org/docs/whyamd.html)**, **[JavaScript Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)**
+* Compilers - [Babel](https://babeljs.io/), **[TypeScript](https://www.typescriptlang.org/)**
+* Bundlers - [Rollup](https://rollupjs.org/guide/en), **[WebPack](https://webpack.github.io/)**, [SystemJS](https://github.com/systemjs/systemjs), [Parcel](https://parceljs.org/)
+* Minifiers - [UglifyJS](https://github.com/mishoo/UglifyJS2)
+* Frameworks - [React](https://reactjs.org/), [Vue](https://vuejs.org/), [Angular](https://angular.io/), [Ember](https://emberjs.com/)
 
 <aside class="notes">
   Link to these page or tutorials about how to use them. (Pat)
@@ -667,7 +616,7 @@ You don't know what you don't know.
 
 > We have very different definitions of easy.
 
-[How it feels to learn JavaScript in ~~~2016~~~, ~~~2017~~~, ~~~2018~~~, 2019](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.sl06jvo9z)
+[How it feels to learn JavaScript in ~~2016~~, ~~2017~~, ~~2018~~, 2019](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.sl06jvo9z)
 
 <aside class="notes">
   (Pat)
@@ -692,30 +641,36 @@ You don't know what you don't know.
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## A good first tool - ArcGIS JS CLI
+## A good first tool - [ArcGIS JS CLI](https://github.com/Esri/arcgis-js-cli)
 
-built for JS API uses good standard frameworks and build tools.
+* Built for JS API 
+* Uses good standard frameworks and tools: `esri/widget/Widget`, WebPack, TypeScript, JS API, SASS
 
-`esri/widget/Widget`, WebPack, TypeScript, JS API, SASS
+```
+> npm install --global @arcgis/cli
+> arcgis create <appName>
+> npm start
+```
 
 <aside class="notes">
-  step through a JSAPI sample, better title for this slide (Allison)
+  If time, show starter app
+  (Allison)
 </aside>
 
 ---
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## learn more!
+## Keep learning
 
-* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+* [ArcGIS DevLabs](https://developers.arcgis.com/labs/?product=JavaScript&topic=any)
 * [MDN: Learn web development](https://developer.mozilla.org/en-US/docs/Learn)
-* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+* [MDN: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 * http://wesbos.com/
-* https://frontendmasters.com/books/front-end-handbook/2018/
-* Tutorials
-
+* [Front End Handbook](https://frontendmasters.com/books/front-end-handbook/2018/)
+* [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/)
 <aside class="notes">
   Add more here (Allison)
 </aside>
