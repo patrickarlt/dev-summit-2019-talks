@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Custom Basemaps with Vector Tile Style Editor | Esri Dev Summit 2019</title>
 
 		<link rel="stylesheet" href="../template/css/reveal.css">
 		<link rel="stylesheet" href="../template/css/theme/dev-summit-2019.css" id="theme">
@@ -41,10 +41,11 @@
 						<!-- Allison -->
 						## Vector Tile Refresher
 
-						* Highly compressed vector geographic data
+						* Compressed vector geographic data
+						* Binary indexed tile scheme
+						* Transfer and render *LOTS* of features
 						* Styled on the client
-						* Ideal for rendering larger numbers of features
-						* Styling is not baked into tiles
+						* Seperation of data (tiles) and style
 					</textarea>
 				</section>
 
@@ -53,11 +54,12 @@
 					<!-- Allison -->
 					## Styling Spec
 
-					* Follows the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
-					* Styles are divided into layers
-					* Each layer references a "source layer" (roads), an optional filter (highways), and a styling data
-					* Supported layers types: background, fill, symbol, line
-					* Writing by hand is extremely difficult and timeconsuming
+					* [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/)
+					* Styles have ~150-300 layers
+					* Each layer has a "source" layer
+					* Layers can have an optional "filter" fo data
+					* Background, fill, symbol, line layers
+					* Hard to write by habd
 					</textarea>
 				</section>
 
@@ -66,9 +68,10 @@
 						<!-- Allison -->
 						## Vector Tile Style Editor
 
-						* A visual editor for styling vector tile data sets
-						* Specific tools for editing Esri basemaps
+						* A visual editor for styling vector tile data
+						* Extra tools for editing Esri basemaps
 						* OSM support coming soon!
+						* Goal: a complete editing experiance
 
 						<aside class="notes">
 							Web application built by the Developer Experience team in Angular. Currently available via the Developers website. Will be integrated into ArcGIS Online later this year.
@@ -106,9 +109,10 @@
 						<!-- Pat -->
 						## Quick Editor
 
-						* Fast, general styling for Esri and OSM basemaps
-						* Define basic colors, appearances, and options
-						* Internal styling rules define each layer's appearance
+						* Fast, bulk styling for Esri and OSM basemaps
+						* 6 general color groups
+						* ~500-1000 styling rules
+						* Label and road size managment
 					</textarea>
 
 					[Demo](https://developers.arcgis.com/vector-tile-style-editor)
@@ -123,13 +127,11 @@
 						<!-- Pat -->
 						## Inside Quick Editor
 
-						1. Choose six colors
-						2. Add colors to quick editor categories and apply
-						3. Label colors are adjusted to meet contrast requirements
-						4. Shadows and roads casing are adjusted to contrast each other
-						5. Icons and patterns are tinted to match colors
-
-						Road and text sizes are altered by a percentage of the current size.
+						1. 6 color groups
+						2. Style rules run
+						3. Labels colored to meet contrast threshold
+						4. Shadows and roads casings colored for contrast
+						5. Icons and patterns are tinted to match color groups
 					</textarea>
 				</section>
 
@@ -196,6 +198,7 @@
 					<textarea data-template>
 						<!-- Pat -->
 						## [Let's make a style](https://developers.arcgis.com/vector-tile-style-editor)
+						<p class="fragments">Please shout out ideas</p>
 					</textarea>
 
 					<aside class="notes`">
@@ -207,6 +210,7 @@
 					<textarea data-template>
 						<!-- Allison -->
 						## Roadmap
+
 						* OSM support - coming very soon!
 						* ArcGIS Online integration - summer 2019
 						* Custom font support - ??
