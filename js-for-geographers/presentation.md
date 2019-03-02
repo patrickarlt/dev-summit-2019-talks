@@ -12,7 +12,7 @@ Fundamentals (12 minutes)
 Patterns (27 minutes)
   Async, callbacks, promises (10 minutes, Pat)
   Closures (2 minutes, Pat)
-  
+
   The DOM and Browser Development (5 minutes, Allison)
   Modules (5 minutes, Allison)
   Walk through chaining promises JS API sample (5 minutes, Allison)
@@ -23,7 +23,7 @@ The JavaScript Ecosystem (6-8 minutes)
   “Opinions” About JavaScript/JS Fatigue
 
 Resources/Keep Learning (9 minutes)
-  ArcGIS cli (5 minutes, Allison) 
+  ArcGIS cli (5 minutes, Allison)
   Resources - tools and helpers (Local Dev Environment/protoyping tools (2 minutes, Allison))
   Resources to Keep Learning (2 minutes, Allison)
 
@@ -76,9 +76,33 @@ opinions - GIS folks definitely know about those
 ---
 
 
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-3.png" -->
+
+## What is this talk?
+
+An attempt to get you _started_ down the path of learning JavaScript.
+
+---
+
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## JS can be overwhelming, but you're more equipped than you think!
+## JS can be overwhelming, you're more equipped than you think!
+
+<ul>
+  <li class="fragment">Scripted with ArcPy?</li>
+  <li class="fragment">Scripted with Python?</li>
+  <li class="fragment">Configured an app?</li>
+  <li class="fragment">Used Arcade?</li>
+  <li class="fragment">Used Model Builder?</li>
+<ul>
+
+---
+
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
+
+## Don't Feel Overwhelmed
+
+You don't need fancy tools and a huge body of knowledge to do useful things with JavaScript.
 
 ---
 
@@ -175,7 +199,7 @@ true || somethingFalsy
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) 
+## [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
 ```js
 function dogYears(age) {
@@ -193,10 +217,10 @@ age => {
 }
 
 age => age*7
-// these are the same! 
+// these are the same!
 ```
 <aside class="notes">
-a function can be treated as a value, passed to another function as an argument, returned as a value, etc.  
+a function can be treated as a value, passed to another function as an argument, returned as a value, etc.
 </aside>
 
 ---
@@ -216,7 +240,7 @@ dogs.length // 3
 
 dogs.forEach(dog => {
   console.log(dog);
-}); 
+});
 > undefined
 
 dogs.map(dog => dog.toUpperCase());
@@ -258,7 +282,7 @@ dog.ageInDogYears(age);
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) 
+## [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 ```js
 class Dog {
@@ -337,7 +361,7 @@ button.addEventListener('click', function () {
 });
 ```
 
-Callback are functions that are called when things happen.
+Callback are functions that are run _later_ when things happen.
 
 [Demo](http://jsbin.com/qovotex/edit?html,js,console,output)
 
@@ -372,6 +396,8 @@ function anyErrors (error) {
 
 Promises represent a future value that will be "resolved".
 
+_I `Promise` to be a useful value in the future._
+
 [Demo](http://jsbin.com/qisiki/edit?js,console)
 
 <aside class="notes">
@@ -397,7 +423,7 @@ go();
 console.log(suffix); // undefined
 ```
 
-When functions are called they remember the variables around them, this is refered to as "lexical scope".
+Functions remember the variables around them, this is refereed to as "lexical scope".
 
 <aside class="notes">
   (Pat)
@@ -407,9 +433,9 @@ When functions are called they remember the variables around them, this is refer
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+## The [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
-* select elements
+* select elements (HTML tags)
 * listen for events
 * change elements
 
@@ -421,8 +447,8 @@ When functions are called they remember the variables around them, this is refer
   Old demo urls:
   Start: http://jsbin.com/qojodez/edit?html,js,output
   Finish: http://jsbin.com/viconot/edit?html,js,output
-  
-  For debugging -- intially, form is missing its id, form is also missing a few name attrs 
+
+  For debugging -- intially, form is missing its id, form is also missing a few name attrs
   * `console.log` - print things to the console
   * `debugger` - stops the application so you can look around
 </aside>
@@ -433,7 +459,7 @@ When functions are called they remember the variables around them, this is refer
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## sharing JavaScript
+## Sharing JavaScript
 
 As applications grow, divide code into different files to stay organized. For small apps, you can just use `<script>` tags.
 ``` html
@@ -499,7 +525,7 @@ require([
 
 ## Putting the pieces together
 
-* [../sample-code/chaining-promises/](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=chaining-promises)
+* [Chaining Promises JS API Sample](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=chaining-promises)
 
 <aside class="notes">
   Step through above JSAPI sample (Allison)
@@ -518,9 +544,9 @@ require([
 
 ## The JavaScript Language
 
-Updates every year.
+JavaScript (the language) updates every year.
 
-2015 had LOADS of new features and established most modern JavaScript
+2015 had LOADS of new features and established most of modern JavaScript.
 
 <aside class="notes">
   (Pat)
@@ -540,6 +566,24 @@ Updates every year.
 
 <aside class="notes">
   Link to these page or tutorials about how to use them. (Pat)
+</aside>
+
+---
+
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
+
+## Some people have "opinions" about JavaScript
+
+Many JavaScript developers have **very** strong opinions about JavaScript.
+
+* Which framework you *should* use
+* Which build tool is *the best*
+* The *only* way to do _________ is&hellip;
+
+<p class="fragment"></p>
+
+<aside class="notes">
+  (Pat)
 </aside>
 
 ---
@@ -579,9 +623,10 @@ You don't know what you don't know.
 ## Fight JavaScript Fatigue
 
 * The JS API is MORE then enough for simple mapping apps
-* Many configurable apps and storymaps are built without frameworks for excessive tools
+* Many configurable apps and storymaps are built without frameworks or excessive tools
 * Add tools when you **KNOW** you will benefit from using them
 * Too many tools === Lots of complexity to manage
+* Don't touch tools until you feel limited by your current approach
 
 <aside class="notes">
   (Pat)
@@ -594,7 +639,7 @@ You don't know what you don't know.
 ## A good first tool - [ArcGIS JS CLI](https://github.com/Esri/arcgis-js-cli)
 
 * Built for JS API
-* Install [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) 
+* Install [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)
 * Uses good standard frameworks and tools: `esri/widget/Widget`, WebPack, TypeScript, JS API, SASS
 
 ```
@@ -616,7 +661,7 @@ You don't know what you don't know.
 ## Development tools
 
 * Set up your local dev environment: [Do I have a web server running?](https://gist.github.com/jgravois/5e73b56fa7756fd00b89)
-* Prototype with [CodePen](https://codepen.io) or [StackBlitz](https://stackblitz.com/) 
+* Prototype with [CodePen](https://codepen.io) or [StackBlitz](https://stackblitz.com/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/)
 
