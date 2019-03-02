@@ -31,7 +31,8 @@ Slides <a href="http://bit.ly/2CF5kQw">http://bit.ly/2CF5kQw</a></p>
 ## CSS is Hard
 
 * Closer to art then computer science
-* Lots of hard, unintuitive concepts
+* Design AND development
+* Lots of unintuitive concepts
 * It has taken me **years** to amass this knowledge
 * Changes somewhat frequently
 * Best practices change
@@ -60,6 +61,9 @@ Slides <a href="http://bit.ly/2CF5kQw">http://bit.ly/2CF5kQw</a></p>
 ### Where does CSS go?
 
 * Inside a `<style>` tag.
+  ```html
+  <style>/* Put CSS here*/</style>
+  ```
 * Inside a `.css` file that is loaded with a `<link>` tag.
   ```html
   <link href="my-css-file.css" rel="stylesheet" type="text/css">
@@ -268,7 +272,7 @@ Right click on something you want to change click "Inspect Element"
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-<h2><a href="http://jsbin.com/revage/edit">Block</a> vs <a href="http://jsbin.com/josuba/edit">Inline</a></h2>
+<h2><a href="http://jsbin.com/revage/edit?html,output">Block</a> vs <a href="http://jsbin.com/josuba/edit?html,output">Inline</a></h2>
 
 <ul>
   <li><a href="http://www.impressivewebs.com/difference-block-inline-css/">The Difference Between “Block” and “Inline”</a></li>
@@ -281,7 +285,7 @@ Right click on something you want to change click "Inspect Element"
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-<h2><a href="http://jsbin.com/ficatu/edit">Units</h2>
+<h2><a href="http://jsbin.com/ficatu/edit?html,output">Units</h2>
 
 <ul>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length">Full unit reference</a></li>
@@ -293,7 +297,7 @@ Right click on something you want to change click "Inspect Element"
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-<h2><a href="http://jsbin.com/sawoho/3/edit">Floats</a></h2>
+<h2><a href="http://jsbin.com/sawoho/3/edit?html,output">Floats</a></h2>
 
 <ul>
   <li><a href="https://css-tricks.com/all-about-floats/">All About Floats</a></li>
@@ -444,6 +448,8 @@ Right click on something you want to change click "Inspect Element"
 
 <p><a href="https://jsbin.com/ducimox/1/edit?html">Bonus Demo: w/ CSS Grid</a></p>
 
+<p>~120 lines of CSS, ~30 lines of JS.</p>
+
 ---
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
@@ -472,7 +478,8 @@ Right click on something you want to change click "Inspect Element"
 * Add tools when you feel limited or want more productivity
 * Don't worry so much about browser compatibility
 * Watch out for the size of web fonts
-* Avoid floats for layout, try using Flexbox and Grid, they are the future
+* Avoid floats for layout, try using Flexbox and Grid
+* You can learn **A LOT** with inspector
 
 ---
 
