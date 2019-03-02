@@ -1,29 +1,30 @@
 <!-- outline
 
-Intro (5 minutes)
+Intro (4 minutes, Pat)
   * what this talk is and isn't (pat)
   * dont be overwhelmed (pat)
-  * you are technically minded enough to learn this (john)
+  * you are technically minded enough to learn this
+  * JavaScript is fun (and useful!) - Pat?
 
 Fundamentals (12 minutes)
-  JavaScript is fun (and useful!) - Pat?
-  variables, operators, arrays, functions, objects, classes (10 minutes, Allison)
+  variables, operators, arrays, functions, objects, classes (12 minutes, Allison)
 
-Patterns (28 minutes)
-  Async, callbacks, promises (5 minutes, Pat)
-  Closures and `this` (5 minutes, Pat)
-
-  Local Dev Environment - just a quick go over of John's gists (3 minutes, Allison)
+Patterns (27 minutes)
+  Async, callbacks, promises (10 minutes, Pat)
+  Closures (2 minutes, Pat)
+  
   The DOM and Browser Development (5 minutes, Allison)
   Modules (5 minutes, Allison)
   Walk through chaining promises JS API sample (5 minutes, Allison)
 
-The JavaScript Ecosystem (15 minutes)
-  Language, tools, frameworks (5 minutes, pat)
-  A note about ES 2015 (pat)
-  “Opinions” About JavaScript/JS Fatigue (5 minutes, pat)
+The JavaScript Ecosystem (6-8 minutes)
+  Language, tools, frameworks
+  A note about ES 2015
+  “Opinions” About JavaScript/JS Fatigue
 
-  ArcGIS cli (3 minutes, Allison)
+Resources/Keep Learning (9 minutes)
+  ArcGIS cli (5 minutes, Allison) 
+  Resources - tools and helpers (Local Dev Environment/protoyping tools (2 minutes, Allison))
   Resources to Keep Learning (2 minutes, Allison)
 
 Questions/take our workshop survey
@@ -69,20 +70,21 @@ opinions - GIS folks definitely know about those
 
 1. Fundamentals
 2. <span style="white-space: nowrap;">Patterns</span>
-3. Put it to use
-4. Fatigue
+3. The JavaScript Ecosystem
+4. Resources and Ways to Keep Learning
+
+---
+
+
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
+
+## JS can be overwhelming, but you're more equipped than you think!
 
 ---
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-4.png" -->
 
 ## Fundamentals
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## JS can be overwhelming, but you're more equipped than you think!
 
 ---
 
@@ -276,7 +278,6 @@ let myOtherDog = new Dalmation('Spot'); // Object { breed: 'Dalmation', name: 'S
 ```
 
 <aside class="notes">
-Add prototypes? If time
 Classes introduced in ES2015 as syntactical sugar over JS's existing prototype-based inheritance
 </aside>
 
@@ -406,55 +407,6 @@ When functions are called they remember the variables around them, this is refer
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## What is `this`?
-
-```js
-var user = {
-  firstName: "Casey",
-  lastName: "Jones",
-  fullName: function () {
-    console.log(this.firstName + " " + this.lastName);
-  }
-}
-
-person.fullName() // > Casey Jones
-```
-
-<aside class="notes">
-  (Pat)
-</aside>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## What is `this`?
-
-The value of `this` depends on how the function was called.
-
-[Demo](https://jsbin.com/rowofi/edit?js,console)
-
-<aside class="notes">
-  (Pat)
-</aside>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
-## Let's set up a JS development environment
-
-* [Do I have a web server running?](https://gist.github.com/jgravois/5e73b56fa7756fd00b89)
-* [`demo.html`](https://github.com/jgravois/presentations/blob/12ad63798193bd32950809996c9825067a742aa7/devsummit/2017/js/snippets/demo.html)
-
-<aside class="notes">
-  (Allison) - this almost seems like it should get moved to resources instead - or should I actually demo setting this up locally? 
-</aside>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
 ## the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
 * select elements
@@ -509,13 +461,11 @@ import { something } from 'some-module';
 ```
 
 This is the future: as you learn JavaScript, you will encounter this more often.
-[Module demo](https://stackblitz.com/edit/js-7duku9)
+[Demo](https://stackblitz.com/edit/js-7duku9)
 
 <aside class="notes">
 Basic import support is available in all browsers except IE
 Dynamic import catching up fast
-
-TODO: add links to more resources about modules
 
 (Allison)
 
@@ -643,7 +593,8 @@ You don't know what you don't know.
 
 ## A good first tool - [ArcGIS JS CLI](https://github.com/Esri/arcgis-js-cli)
 
-* Built for JS API 
+* Built for JS API
+* Install [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) 
 * Uses good standard frameworks and tools: `esri/widget/Widget`, WebPack, TypeScript, JS API, SASS
 
 ```
@@ -653,8 +604,24 @@ You don't know what you don't know.
 ```
 
 <aside class="notes">
-  If time, show starter app
+  Note that this isn't a beginner tool
+  Have fresh cli app spun up and running locally
   (Allison)
+</aside>
+
+---
+
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
+
+## Development tools
+
+* Set up your local dev environment: [Do I have a web server running?](https://gist.github.com/jgravois/5e73b56fa7756fd00b89)
+* Prototype with [CodePen](https://codepen.io) or [StackBlitz](https://stackblitz.com/) 
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/)
+
+<aside class="notes">
+(Allison)
 </aside>
 
 ---
@@ -670,9 +637,9 @@ You don't know what you don't know.
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 * http://wesbos.com/
 * [Front End Handbook](https://frontendmasters.com/books/front-end-handbook/2018/)
-* [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/)
+
 <aside class="notes">
-  Add more here (Allison)
+(Allison)
 </aside>
 
 ---
