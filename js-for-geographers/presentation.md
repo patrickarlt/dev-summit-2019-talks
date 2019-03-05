@@ -363,8 +363,6 @@ button.addEventListener('click', function () {
 
 Callback are functions that are run _later_ when things happen.
 
-[Demo](http://jsbin.com/qovotex/edit?html,js,console,output)
-
 <aside class="notes">
   (Pat)
 </aside>
@@ -561,8 +559,22 @@ JavaScript (the language) updates every year.
 * Module Formats - [CommonJS](http://wiki.commonjs.org/wiki/CommonJS), **[AMD](https://requirejs.org/docs/whyamd.html)**, **[JavaScript Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)**
 * Compilers - [Babel](https://babeljs.io/), **[TypeScript](https://www.typescriptlang.org/)**
 * Bundlers - [Rollup](https://rollupjs.org/guide/en), **[WebPack](https://webpack.github.io/)**, [SystemJS](https://github.com/systemjs/systemjs), [Parcel](https://parceljs.org/)
-* Minifiers - [UglifyJS](https://github.com/mishoo/UglifyJS2)
 * Frameworks - [React](https://reactjs.org/), [Vue](https://vuejs.org/), [Angular](https://angular.io/), [Ember](https://emberjs.com/)
+
+<aside class="notes">
+  Link to these page or tutorials about how to use them. (Pat)
+</aside>
+
+---
+
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
+
+## Node JS and NPM
+
+* Node JS - Server side JS. Most JS tools are written in Node JS
+* NPM - Package manager and distribution system for JS Modules
+
+https://nodeschool.io/
 
 <aside class="notes">
   Link to these page or tutorials about how to use them. (Pat)
@@ -590,20 +602,6 @@ Many JavaScript developers have **very** strong opinions about JavaScript.
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## the JavaScript ecosystem
-
-You don't know what you don't know.
-
-<p class="fragment">and that is great.</p>
-
-<aside class="notes">
-  Link to these page or tutorials about how to use them. (Pat)
-</aside>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
 ## JavaScript Fatigue
 
 > Look, it’s easy. Code everything in Typescript. All modules that use Fetch compile them to target ES6, transpile them with Babel on a stage-3 preset, and load them with SystemJS. If you don’t have Fetch, polyfill it, or use Bluebird, Request or Axios, and handle all your promises with await.
@@ -614,6 +612,20 @@ You don't know what you don't know.
 
 <aside class="notes">
   (Pat)
+</aside>
+
+---
+
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
+
+## the JavaScript ecosystem
+
+You don't know what you don't know.
+
+<p class="fragment">and that is great.</p>
+
+<aside class="notes">
+  Link to these page or tutorials about how to use them. (Pat)
 </aside>
 
 ---
@@ -661,7 +673,7 @@ You don't know what you don't know.
 ## Development tools
 
 * Set up your local dev environment: [Do I have a web server running?](https://gist.github.com/jgravois/5e73b56fa7756fd00b89)
-* Prototype with [CodePen](https://codepen.io) or [StackBlitz](https://stackblitz.com/)
+* Prototype with [CodePen](https://codepen.io), [JSBin](https://jsbin.com) or [StackBlitz](https://stackblitz.com/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/)
 
@@ -680,7 +692,7 @@ You don't know what you don't know.
 * [MDN: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
-* http://wesbos.com/
+* [JavaScript 30](https://javascript30.com/)
 * [Front End Handbook](https://frontendmasters.com/books/front-end-handbook/2018/)
 
 <aside class="notes">
