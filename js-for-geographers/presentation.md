@@ -159,7 +159,7 @@ age-- // 20
 ```
 
 <aside class="notes">
-
+  age is declared in the last slide to save space
 </aside>
 
 ---
@@ -212,14 +212,14 @@ dogYears(3);
 ## [arrow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) functions
 ```js
 age => {
-  return age*7
+  return age * 7
 }
 
-age => age*7
+age => age * 7
 // these are the same!
 ```
 <aside class="notes">
-a function can be treated as a value, passed to another function as an argument, returned as a value, etc.
+a function can be treated as a value, passed to another function as an argument, returned as a value from a function, etc.
 </aside>
 
 ---
@@ -269,7 +269,7 @@ let dog = {
 
 > Object {age: 7, canBark: true, _ssshhh: 'top secret', ageInDogYears: ageInDogYears() }
 
-dog.ageInDogYears(age);
+dog.ageInDogYears(dog.age);
 > 49
 ```
 <aside class="notes">
@@ -420,7 +420,7 @@ go();
 console.log(suffix); // undefined
 ```
 
-Functions remember the variables around them, this is refereed to as "lexical scope".
+Functions remember the variables around them, this is referred to as "lexical scope".
 
 <aside class="notes">
   (Pat)
@@ -436,18 +436,28 @@ Functions remember the variables around them, this is refereed to as "lexical sc
 * listen for events
 * change elements
 
-[A simple form](https://stackblitz.com/edit/js-zh1tc1)
+``` js
+console.log(value); // prints value to js console
+debugger; // pauses application code 
+```
 
-[Finished example](https://stackblitz.com/edit/js-5dkvb8)
+[Demo](https://stackblitz.com/edit/js-5dkvb8)
+
+
+
 
 <aside class="notes">
+For debugging:
+  * `console.log` - print things to the console
+  * `debugger` - stops the application so you can look around
+
+  Note - demo is initially missing several name attrs for debugging demo
+  Debugger statement is not working in Firefox suddenly; demo setting a breakpoint
+
   Old demo urls:
   Start: http://jsbin.com/qojodez/edit?html,js,output
   Finish: http://jsbin.com/viconot/edit?html,js,output
 
-  For debugging -- intially, form is missing its id, form is also missing a few name attrs
-  * `console.log` - print things to the console
-  * `debugger` - stops the application so you can look around
 </aside>
 
 ---
@@ -464,13 +474,22 @@ As applications grow, divide code into different files to stay organized. For sm
 <script src="/alert.js"></script>
 <script src="/form.js"></script>
 ```
+``` js
+// alert.js file
+var alert = "alert!"
+```
+``` js
+// form.js file
+var form = document.getElementById("form");
+
+form.addEventListener("submit", (event) => {
+  console.log(alert); // this will work thanks to global scope
+});
+```
+[View full example](https://glitch.com/edit/#!/all-the-scripts)
 
 <aside class="notes">
-[Form demo - now with multiple JS files](https://glitch.com/edit/#!/all-the-scripts)
-Not sure we have time to show this demo and it's pretty self-explanatory. Stackblitz doesn't support multiple script tags and Glitch can't do import/export
-
 (Allison)
-
 </aside>
 
 ---
@@ -510,7 +529,7 @@ require([
 ```
 
 `require` is a fancy way of adding `<script>` tags to load code on demand.
-[View live demo](https://jsbin.com/hococib/edit?html,js,output)
+[Demo](https://jsbin.com/hococib/edit?html,js,output)
 
 <aside class="notes">
   (Allison)
@@ -647,34 +666,13 @@ You don't know what you don't know.
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## A good first tool - [ArcGIS JS CLI](https://github.com/Esri/arcgis-js-cli)
-
-* Built for JS API
-* Install [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)
-* Uses good standard frameworks and tools: `esri/widget/Widget`, WebPack, TypeScript, JS API, SASS
-
-```
-> npm install --global @arcgis/cli
-> arcgis create <appName>
-> npm start
-```
-
-<aside class="notes">
-  Note that this isn't a beginner tool
-  Have fresh cli app spun up and running locally
-  (Allison)
-</aside>
-
----
-
-<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
-
 ## Development tools
 
 * Set up your local dev environment: [Do I have a web server running?](https://gist.github.com/jgravois/5e73b56fa7756fd00b89)
 * Prototype with [CodePen](https://codepen.io), [JSBin](https://jsbin.com) or [StackBlitz](https://stackblitz.com/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/)
+* [ArcGIS JS CLI](https://github.com/Esri/arcgis-js-cli)
 
 <aside class="notes">
 (Allison)
