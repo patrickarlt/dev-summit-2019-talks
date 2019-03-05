@@ -23,7 +23,6 @@ The JavaScript Ecosystem (6-8 minutes)
   “Opinions” About JavaScript/JS Fatigue
 
 Resources/Keep Learning (9 minutes)
-  ArcGIS cli (5 minutes, Allison)
   Resources - tools and helpers (Local Dev Environment/protoyping tools (2 minutes, Allison))
   Resources to Keep Learning (2 minutes, Allison)
 
