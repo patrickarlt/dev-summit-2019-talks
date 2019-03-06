@@ -66,6 +66,11 @@
 						* Styled on the client
 						* Seperation of data (tiles) and style
 					</textarea>
+					<aside class="notes">
+						Vector tiles are pre-generated and then cached on a server
+						Vector basemaps are composed of many layers that represent geographical types such as land, water, roads, buildings, and
+						text labels
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/2019/devsummit/bg-3.png">
@@ -80,6 +85,13 @@
 					* Background, fill, symbol, line layers
 					* Hard to write by hand
 					</textarea>
+					<aside class="notes">
+						What is a style? A document that defines the visual appearance of the map - what to draw, order to draw it in, how to style. Styles are written as a large JSON object with root level and nested properties.
+						Layers are drawn in the order that they are listed in a root-level layers property
+						Layers except for background type refer to a source. 
+						Layers can optionally filter features
+						Layers must have a type
+					</aside>
 				</section>
 
 				<section data-markdown data-background="../template/img/2019/devsummit/bg-6.png">
@@ -90,10 +102,13 @@
 						* A visual editor for styling vector tile data
 						* Extra tools for editing Esri basemaps
 						* OSM support coming soon!
-						* Goal: a complete editing experiance
+						* Goal: a complete editing experience
 
 						<aside class="notes">
-							Web application built by the Developer Experience team in Angular. Currently available via the Developers website. Will be integrated into ArcGIS Online later this year.
+							Web application built by the Developer Experience team in Angular. 
+							Currently available via the Developers website. 
+							Will be integrated into ArcGIS Online later this year.
+							We'll demo OSM today, will be released very very soon
 						</aside>
 					</textarea>
 				</section>
@@ -166,7 +181,9 @@
 					</textarea>
 
 					<aside class="notes`">
-						Start from previous demo, zoom to palm springs, style at least 1 road group, golf courses (show search), edit color and label size, replace font
+						Zoom to palm springs
+						Style at least 1 road group
+						Golf courses (show search) - move to indiv. layer editor
 					</aside>
 				</section>
 
@@ -184,7 +201,7 @@
 					</textarea>
 
 					<aside class="notes`">
-						focus on golf courses. use zoom range tools, edit single vs stops for text size, opacity, color
+						Golf courses - use zoom range tools, edit single vs stops for text size, opacity, color
 					</aside>
 				</section>
 
@@ -193,13 +210,14 @@
 						<!-- Allison -->
 						## Sprite Editor
 
-						* Recolors icons and pattern
+						* Recolors icons and patterns
 						* Upload new sprites
 					</textarea>
 
 					<aside class="notes`">
-						add a new sprite for golf course pattern, switch back to layer editor and use it, return to sprite editor, tint a highway shield.
-						If time, add a symbol sprite for golf courses, add it to the golf courses label, demo offsets & anchor
+						Add new sprite for golf course pattern, switch back to layer editor and apply pattern
+						Add golf flag sprite, add to golf courses label, demo offsets & anchor
+						Return to sprite editor and tint 
 					</aside>
 				</section>
 
@@ -213,7 +231,7 @@
 					</textarea>
 
 					<aside class="notes`">
-						Demonstrate audit - go to layer editor, select a single layer, make it a really strange color, go back to color editor to find and fix.
+						Demonstrate audit - click Education layer on map, make it a really strange color, show undo/redo, suppose it's been several changes ago, go back to color editor to find and fix.
 					</aside>
 				</section>
 
@@ -236,8 +254,8 @@
 
 						* OSM support - coming very soon!
 						* ArcGIS Online integration - 2019
-						* Layer management + reordering - TBD
-						* Upload Custom fonts - TBD
+						* Layer management and reordering - TBD
+						* Upload custom fonts - TBD
 						* Editing raw JSON - TBD
 					</textarea>
 
