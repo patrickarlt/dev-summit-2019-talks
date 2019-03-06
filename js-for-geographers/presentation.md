@@ -553,12 +553,27 @@ JavaScript (the language) updates every year.
 
 <!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
 
-## Build tools, bundlers, and frameworks - oh my!
+## Build tools, bundlers, and frameworks
 
-* Module Formats - [CommonJS](http://wiki.commonjs.org/wiki/CommonJS), **[AMD](https://requirejs.org/docs/whyamd.html)**, **[JavaScript Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)**
-* Compilers - [Babel](https://babeljs.io/), **[TypeScript](https://www.typescriptlang.org/)**
-* Bundlers - [Rollup](https://rollupjs.org/guide/en), **[WebPack](https://webpack.github.io/)**, [SystemJS](https://github.com/systemjs/systemjs), [Parcel](https://parceljs.org/)
-* Frameworks - [React](https://reactjs.org/), [Vue](https://vuejs.org/), [Angular](https://angular.io/), [Ember](https://emberjs.com/)
+* Modules - formats for splitting up and sharing code
+* Compilers - Transform JS > JS, add features to JS
+* Bundlers - Combine modules and other assets
+* Frameworks - Architecture and structure for large apps/teams
+
+<aside class="notes">
+  Link to these page or tutorials about how to use them. (Pat)
+</aside>
+
+---
+
+<!-- .slide: data-background="../template/img/2019/devsummit/bg-2.png" -->
+
+## Build tools, bundlers, and frameworks
+
+* Modules <span class="fragment">- AMD</span> <span class="fragment">, JS Modules</span>
+* Compilers <span class="fragment">- TypeScript</span>
+* Bundlers <span class="fragment">- WebPack</span>
+* Frameworks <span class="fragment">- React</span> <span class="fragment">, Angular</span> <span class="fragment">, Vue</span> <span class="fragment">, Ember</span> <span class="fragment">, Dojo</span>
 
 <aside class="notes">
   Link to these page or tutorials about how to use them. (Pat)
@@ -570,13 +585,13 @@ JavaScript (the language) updates every year.
 
 ## Node JS and NPM
 
-* Node JS - Server side JS. Most JS tools are written in Node JS
-* NPM - Package manager and distribution system for JS Modules
+* Node JS - Run JavaScript on a server or desktop computer. Build web servers, APIs and CLI tools
+* NPM - Package manager and distribution system for JS Modules. Analogus to Pip or Conda in Python.
 
-https://nodeschool.io/
+[Learn Node JS at NodeSchool](https://nodeschool.io/)
 
 <aside class="notes">
-  Link to these page or tutorials about how to use them. (Pat)
+  (Pat)
 </aside>
 
 ---
@@ -692,6 +707,8 @@ You don't know what you don't know.
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 * [JavaScript 30](https://javascript30.com/)
+* [NodeSchool](https://nodeschool.io/)
+* [Command Line Power User](https://commandlinepoweruser.com/)
 * [Front End Handbook](https://frontendmasters.com/books/front-end-handbook/2018/)
 
 <aside class="notes">
