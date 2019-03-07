@@ -1,36 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>Custom Basemaps with Vector Tile Style Editor | Esri Dev Summit 2019</title>
+    <title>
+      Custom Basemaps with Vector Tile Style Editor | Esri Dev Summit 2019
+    </title>
 
-		<link rel="stylesheet" href="../template/css/reveal.css">
-		<link rel="stylesheet" href="../template/css/theme/dev-summit-2019.css" id="theme">
+    <link rel="stylesheet" href="../template/css/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="../template/css/theme/dev-summit-2019.css"
+      id="theme"
+    />
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="../template/lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../template/lib/css/zenburn.css" />
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? '../template/css/print/pdf.css' : '../template/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<!-- NOTE: This is a fork from the Esri-approved PPT file here:
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "../template/css/print/pdf.css"
+        : "../template/css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- NOTE: This is a fork from the Esri-approved PPT file here:
 			https://compass.esri.com/org/marketing/DevSummit/Pages/Workshop.aspx
 			We have moved the background images and have formatted the title slide,
 			But other things like alignment of text on subsequent slides may not be
 			in line with the PPT - use this template at your own risk!
 			-->
 
-			<!--
+      <!--
 		Outline:
     - Introduce ourselves and relation to the VTSE project (1 minute, Pat + Allison)
     - Brief overview of what we will cover (conceptual info, introduce the spec, brief overview of tools, 4 minutes, Allison)
@@ -49,14 +60,27 @@
     - Ask for feedback (1 minute)
 
 			-->
-			<div class="slides">
-				<section data-background="../template/img/2019/devsummit/bg-1.png" data-background-size="cover" style="padding-left: 80px;">
-					<h1 style="text-align: left; font-size: 80px;">Custom Basemaps with <br>Vector Tile Style Editor</h1>
-					<p style="text-align: left; font-size: 30px;">Patrick Arlt and Allison Davis</p>
-					<p style="text-align: left; font-size: 30px;"><a href="http://bit.ly/2CSLnYX">http://bit.ly/2CSLnYX</a></p>
-				</section>
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-3.png">
-					<textarea data-template>
+      <div class="slides">
+        <section
+          data-background="../template/img/2019/devsummit/bg-1.png"
+          data-background-size="cover"
+          style="padding-left: 80px;"
+        >
+          <h1 style="text-align: left; font-size: 80px;">
+            Custom Basemaps with <br />Vector Tile Style Editor
+          </h1>
+          <p style="text-align: left; font-size: 30px;">
+            Patrick Arlt and Allison Davis
+          </p>
+          <p style="text-align: left; font-size: 30px;">
+            <a href="http://bit.ly/2CSLnYX">http://bit.ly/2CSLnYX</a>
+          </p>
+        </section>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-3.png"
+        >
+          <textarea data-template>
 						<!-- Allison -->
 						## Vector Tile Refresher
 
@@ -65,16 +89,20 @@
 						* Transfer and render *LOTS* of features
 						* Styled on the client
 						* Seperation of data (tiles) and style
-					</textarea>
-					<aside class="notes">
-						Vector tiles are pre-generated and then cached on a server
-						Vector basemaps are composed of many layers that represent geographical types such as land, water, roads, buildings, and
-						text labels
-					</aside>
-				</section>
+					</textarea
+          >
+          <aside class="notes">
+            Vector tiles are pre-generated and then cached on a server Vector
+            basemaps are composed of many layers that represent geographical
+            types such as land, water, roads, buildings, and text labels
+          </aside>
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-3.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-3.png"
+        >
+          <textarea data-template>
 					<!-- Allison -->
 					## Styling Spec
 
@@ -84,18 +112,24 @@
 					* Layers can have an optional "filter" for data
 					* Background, fill, symbol, line layers
 					* Hard to write by hand
-					</textarea>
-					<aside class="notes">
-						What is a style? A document that defines the visual appearance of the map - what to draw, order to draw it in, how to style. Styles are written as a large JSON object with root level and nested properties.
-						Layers are drawn in the order that they are listed in a root-level layers property
-						Layers except for background type refer to a source. 
-						Layers can optionally filter features
-						Layers must have a type
-					</aside>
-				</section>
+					</textarea
+          >
+          <aside class="notes">
+            What is a style? A document that defines the visual appearance of
+            the map - what to draw, order to draw it in, how to style. Styles
+            are written as a large JSON object with root level and nested
+            properties. Layers are drawn in the order that they are listed in a
+            root-level layers property Layers except for background type refer
+            to a source. Layers can optionally filter features Layers must have
+            a type
+          </aside>
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-6.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-6.png"
+        >
+          <textarea data-template>
 						<!-- Allison -->
 						## Vector Tile Style Editor
 
@@ -105,27 +139,35 @@
 						* Goal: a complete editing experience
 
 						<aside class="notes">
-							Web application built by the Developer Experience team in Angular. 
-							Currently available via the Developers website. 
+							Web application built by the Developer Experience team in Angular.
+							Currently available via the Developers website.
 							Will be integrated into ArcGIS Online later this year.
 							We'll demo OSM today, will be released very very soon
 						</aside>
-					</textarea>
-				</section>
+					</textarea
+          >
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-4.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-4.png"
+        >
+          <textarea data-template>
 						<!-- Pat -->
 						## Showcase
 
-						<img src="vse-1920x1080.png" alt="" style="width: 50%;">
+						<a href="https://esripdx.maps.arcgis.com/apps/Cascade/index.html?appid=9a79059a75e249039d24740758e4624b"><img src="vse-1920x1080.png" alt="" style="width: 50%;"></a>
 
 						[Showcase App](https://esripdx.maps.arcgis.com/apps/Cascade/index.html?appid=9a79059a75e249039d24740758e4624b)
-					</textarea>
-				</section>
+					</textarea
+          >
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-6.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-6.png"
+        >
+          <textarea data-template>
 						<!-- Pat -->
 						## Editor Overview
 
@@ -134,12 +176,15 @@
 						<aside class="notes">
 							open a basemap, click through the tools, show minimaps, toggle hillshade, click the map, save the basemap
 						</aside>
-					</textarea>
-				</section>
+					</textarea
+          >
+        </section>
 
-
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-2.png"
+        >
+          <textarea data-template>
 						<!-- Pat -->
 						## Quick Editor
 
@@ -147,17 +192,23 @@
 						* 6 color groups
 						* ~500-1000 styling rules
 						* Label and road size editing
-					</textarea>
+					</textarea
+          >
 
-					[Demo](https://developers.arcgis.com/vector-tile-style-editor)
+          [Demo](https://developers.arcgis.com/vector-tile-style-editor)
 
-					<aside class="notes`">
-						start from previous demo, select a decent color set, show random, show color pallette tools, show label tools, show sprite recoloring, font replace, label size, road size
-					</aside>
-				</section>
+          <aside class="notes`">
+            start from previous demo, select a decent color set, show random,
+            show color pallette tools, show label tools, show sprite recoloring,
+            font replace, label size, road size
+          </aside>
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-2.png"
+        >
+          <textarea data-template>
 						<!-- Pat -->
 						## Inside Quick Editor
 
@@ -166,11 +217,15 @@
 						3. Labels colored to meet contrast threshold
 						4. Shadows and road casings colored for contrast
 						5. Icons and patterns are tinted to match color groups
-					</textarea>
-				</section>
+					</textarea
+          >
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-2.png"
+        >
+          <textarea data-template>
 						<!-- Allison -->
 						## Group Editor
 
@@ -178,17 +233,20 @@
 						* Same rules as quick editor
 						* Great for categories like Roads > Major and Roads > Minor
 						* Edit a large number of layers fast
-					</textarea>
+					</textarea
+          >
 
-					<aside class="notes`">
-						Zoom to palm springs
-						Style at least 1 road group
-						Golf courses (show search) - move to indiv. layer editor
-					</aside>
-				</section>
+          <aside class="notes`">
+            Zoom to palm springs Style at least 1 road group Golf courses (show
+            search) - move to indiv. layer editor
+          </aside>
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-2.png"
+        >
+          <textarea data-template>
 						<!-- Allison -->
 						## Layer Editor
 
@@ -198,57 +256,76 @@
 						* Show/hide layers
 						* Customize zoom levels
 						* High level of control
-					</textarea>
+					</textarea
+          >
 
-					<aside class="notes`">
-						Golf courses - use zoom range tools, edit single vs stops for text size, opacity, color
-					</aside>
-				</section>
+          <aside class="notes`">
+            Golf courses - use zoom range tools, edit single vs stops for text
+            size, opacity, color
+          </aside>
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-2.png"
+        >
+          <textarea data-template>
 						<!-- Allison -->
 						## Sprite Editor
 
 						* Recolors icons and patterns
 						* Upload new sprites
-					</textarea>
+					</textarea
+          >
 
-					<aside class="notes`">
-						Add new sprite for golf course pattern, switch back to layer editor and apply pattern
-						Add golf flag sprite, add to golf courses label, demo offsets & anchor
-						Return to sprite editor and tint 
-					</aside>
-				</section>
+          <aside class="notes`">
+            Add new sprite for golf course pattern, switch back to layer editor
+            and apply pattern Add golf flag sprite, add to golf courses label,
+            demo offsets & anchor Return to sprite editor and tint
+          </aside>
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-2.png"
+        >
+          <textarea data-template>
 						<!-- Allison -->
 						## Color Editor
 
 						* Find and replace colors in a style
 						* Great for auditing a map to identify out of place colors
-					</textarea>
+					</textarea
+          >
 
-					<aside class="notes`">
-						Demonstrate audit - click Education layer on map, make it a really strange color, show undo/redo, suppose it's been several changes ago, go back to color editor to find and fix.
-					</aside>
-				</section>
+          <aside class="notes`">
+            Demonstrate audit - click Education layer on map, make it a really
+            strange color, show undo/redo, suppose it's been several changes
+            ago, go back to color editor to find and fix.
+          </aside>
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-4.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-4.png"
+        >
+          <textarea data-template>
 						<!-- Pat -->
 						## [Let's make a style](https://developers.arcgis.com/vector-tile-style-editor)
 						<p class="fragment">Please shout out ideas</p>
-					</textarea>
+					</textarea
+          >
 
-					<aside class="notes`">
-						Start making a style start to finish, take audience suggestions
-					</aside>
-				</section>
+          <aside class="notes`">
+            Start making a style start to finish, take audience suggestions
+          </aside>
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-2.png"
+        >
+          <textarea data-template>
 						<!-- Allison -->
 						## Roadmap
 
@@ -257,79 +334,100 @@
 						* Layer management and reordering - TBD
 						* Upload custom fonts - TBD
 						* Editing raw JSON - TBD
-					</textarea>
+					</textarea
+          >
 
-					<aside class="notes`">
-						Demo OSM branch
-					</aside>
-				</section>
+          <aside class="notes`">
+            Demo OSM branch
+          </aside>
+        </section>
 
-
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-2.png"
+        >
+          <textarea data-template>
 						<!-- Allison -->
 						## Frequent Questions
 						* Can I style my own basemaps with the VTSE?
 						* When will this be available in ArcGIS Enterprise?
 						* When will this leave beta?
-					</textarea>
+					</textarea
+          >
 
-					<aside class="notes`">
-						- You can, although you won't be able to use quick editor or group editor at this time
-						- Enterprise integration will take place at some point after online
-						- Integration into ArcGIS Online will mark the end of our beta release
-					</aside>
-				</section>
+          <aside class="notes`">
+            - You can, although you won't be able to use quick editor or group
+            editor at this time - Enterprise integration will take place at some
+            point after online - Integration into ArcGIS Online will mark the
+            end of our beta release
+          </aside>
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-2.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-2.png"
+        >
+          <textarea data-template>
 						<!-- Allison -->
 						## How do I get started?
 						* [Tutorial: Style a vector basemap](https://developers.arcgis.com/labs/arcgisonline/style-a-vector-basemap/)
 						* [Tutorial: Display a styled basemap in your app](https://developers.arcgis.com/labs/javascript/display-a-styled-vector-basemap/)
 						* Feedback on Geonet: https://bit.ly/2RzadCc
-					</textarea>
+					</textarea
+          >
 
-					<aside class="notes`">
+          <aside class="notes`"></aside>
+        </section>
 
-					</aside>
-				</section>
-
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-esri.png">
-					<textarea data-template>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-esri.png"
+        >
+          <textarea data-template>
 						<br><br><br><br><br><br>
 
 						Slides at http://bit.ly/2CSLnYX
-					</textarea>
-				</section>
+					</textarea
+          >
+        </section>
 
-				<section data-markdown data-background="../template/img/2019/devsummit/bg-rating.png"></section>
-			</div>
-		</div>
+        <section
+          data-markdown
+          data-background="../template/img/2019/devsummit/bg-rating.png"
+        ></section>
+      </div>
+    </div>
 
-		<script src="../template/lib/js/head.min.js"></script>
-		<script src="../template/js/reveal.js"></script>
+    <script src="../template/lib/js/head.min.js"></script>
+    <script src="../template/js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				//controls: true,
-				progress: true,
-				history: true,
-				center: true,
-				controls: false,
-				width: 1366,
-				height: 768,
-				transition: 'fade', // none/fade/slide/convex/concave/zoom
-				dependencies: [
-					{ src: '../template/plugin/markdown/marked.js' },
-					{ src: '../template/plugin/markdown/markdown.js' },
-					{ src: '../template/plugin/notes/notes.js', async: true },
-					{ src: '../template/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        //controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        controls: false,
+        width: 1366,
+        height: 768,
+        margin: 0.125,
+        transition: "fade", // none/fade/slide/convex/concave/zoom
+        dependencies: [
+          { src: "../template/plugin/markdown/marked.js" },
+          { src: "../template/plugin/markdown/markdown.js" },
+          { src: "../template/plugin/notes/notes.js", async: true },
+          {
+            src: "../template/plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
 </html>
